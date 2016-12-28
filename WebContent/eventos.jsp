@@ -8,7 +8,7 @@
 
 <html lang="es">
 	<head>
-		<title>Martes de Bluemix - Próximos eventos</title>
+		<title>Martes de Bluemix - PrÃ³ximos eventos</title>
 		<meta charset="UTF-8">
 		<meta name="author" content="Noelia Herranz">
 		<meta name="application-name" content="Martes de Bluemix">
@@ -22,13 +22,13 @@
 			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Martes de Bluemix </a>
 			<div class="admin"><a class="enlace" href="http://adminbmsl.mybluemix.net/" target="_blank">Administrador</a></div>
 			<div class="menu">
-				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
-				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
+				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">PrÃ³ximos eventos</a>
+				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interÃ©s</a>
 			</div>
 		</div>
 
 		<div class="cuerpo">
-			<h1> Próximos eventos </h1><br><br>
+			<h1> PrÃ³ximos eventos </h1><br><br>
 			<%
 				Lista proxEvs = new Lista();
 				List<Evento> listEvs = proxEvs.getEventos();

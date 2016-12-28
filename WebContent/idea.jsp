@@ -18,8 +18,8 @@
 			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Martes de Bluemix </a>
 			<div class="admin"><a class="enlace" href="http://adminbmsl.mybluemix.net/" target="_blank">Administrador</a></div>
 			<div class="menu">
-				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
-				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
+				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">PrÃ³ximos eventos</a>
+				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interÃ©s</a>
 			</div>
 		</div>
 		
@@ -28,10 +28,10 @@
 		%>
 		
 		<div class="cuerpo">
-			<h1> ¿Tienes una buena idea? ¡Cuéntanosla! </h1><br><br>
+			<h1> Â¿Tienes una buena idea? Â¡CuÃ©ntanosla! </h1><br><br>
 			<form action="/idea" method="post">
 				<input type="hidden" name="pagina" value="idea">
-				<h2>Si tienes una idea sobre cómo aplicar Bluemix en tu empresa, puedes contárnosla en este espacio. &nbsp; <span class="subtitulo">(Máx. 1000 caracteres)</span></h2><br>
+				<h2>Si tienes una idea sobre cÃ³mo aplicar Bluemix en tu empresa, puedes contÃ¡rnosla en este espacio. &nbsp; <span class="subtitulo">(MÃ¡x. 1000 caracteres)</span></h2><br>
 				<table><tr>
 					<td class="form">Empresa: </td>
 					<td class="form"><input type="text" name="empresa" size=60 maxlength=60 value="<% if (sesion.getAttribute("empresa") != null) out.print(sesion.getAttribute("empresa")); %>"/></td>
