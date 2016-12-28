@@ -1,9 +1,11 @@
 ---
 applications:
-- disk_quota: 512M
-  name: Game Of Bluemix
+- name: Game Of Bluemix
+  host: gameofbluemix
   domain: mybluemix.net
   instances: 1
   memory: 512M
+  disk_quota: 512M
+  path: GameOfBluemix.war
   services:
     - Compose for MySQL
