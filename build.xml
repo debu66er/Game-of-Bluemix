@@ -18,7 +18,7 @@
 	</target>
 
 	<target name="package">
-		<war destfile="GameOfBluemix.war" manifest="${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
+		<war destfile="${basedir}/GameOfBluemix.war" manifest="${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/classes/**" />
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
 			<fileset dir="${basedir}/WebContent" includes="images/**" />
@@ -31,7 +31,7 @@
 	<target name="deploy">
 		<copy todir="${artifact_dir}">
 			<fileset file="${basedir}/manifest.yml" />
-			<fileset file="${basedir}/GameoOfBluemix.war" />
+			<fileset file="${basedir}/GameOfBluemix.war" />
 	    </copy>
 	</target>
 </project>
