@@ -1,12 +1,9 @@
 ---
-declared-services:
-  compose-for-mysql:
-    label: Compose for MySQL
-    plan: Standard*
+
 applications:
 - disk_quota: 512M
   name: Game of Bluemix
   instances: 1
   memory: 512M
   services:
-    - compose-for-mysql
+    - Compose for MySQL
