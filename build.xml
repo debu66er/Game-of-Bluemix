@@ -19,12 +19,12 @@
 
 	<target name="package">
 		<war destfile="GameOfBluemix.war" manifest="${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
-			<fileset dir="${home_dir}/Game of Bluemix/WebContent" includes="WEB-INF/classes/**" />
-			<fileset dir="${home_dir}/Game of Bluemix/WebContent" includes="WEB-INF/lib/**" />
-			<fileset dir="${home_dir}/Game of Bluemix/WebContent" includes="images/**" />
-			<fileset dir="${home_dir}/Game of Bluemix/WebContent" includes="*.html" />
-			<fileset dir="${home_dir}/Game of Bluemix/WebContent" includes="*.jsp" />
-			<fileset dir="${home_dir}/Game of Bluemix/WebContent" includes="*.css" />
+			<fileset dir="${basedir}/WebContent" includes="WEB-INF/classes/**" />
+			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
+			<fileset dir="${basedir}/WebContent" includes="images/**" />
+			<fileset dir="${basedir}/WebContent" includes="*.html" />
+			<fileset dir="${basedir}/WebContent" includes="*.jsp" />
+			<fileset dir="${basedir}/WebContent" includes="*.css" />
 		</war>
 	</target>
 				
