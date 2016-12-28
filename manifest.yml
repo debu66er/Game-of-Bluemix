@@ -2,7 +2,7 @@
 applications:
 - disk_quota: 512M
   name: GameOfBluemix
-  domain: game
+  domain: mybluemix.net
   instances: 1
   memory: 512M
   services:
