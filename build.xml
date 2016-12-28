@@ -31,7 +31,7 @@
 	<target name="deploy">
 		<copy todir="${artifact_dir}">
 			<fileset file="${basedir}/manifest.yml" />
-			<fileset file="GameoOfBluemix.ear" />
+			<fileset file="${basedir}/GameoOfBluemix.war" />
 	    </copy>
 	</target>
 </project>
