@@ -39,7 +39,7 @@ public class Idea {
 			if (correcto) {
 				mensaje = "\u00a1Gracias por tu idea! La tendremos en cuenta.";
 			} else {
-				mensaje = "Ha habido un error, por favor, inténtalo de nuevo.";
+				mensaje = "Ha habido un error, por favor, intÃ©ntalo de nuevo.";
 			}
 			
 			request.setAttribute("mensaje", mensaje);

@@ -97,7 +97,7 @@ public class Lista {
 		return eventos;
 	}
 	
-	public List<Pregunta> getPreguntasAleatorias(int n) {  //n = número de preguntas que se quieren mostrar
+	public List<Pregunta> getPreguntasAleatorias(int n) {  //n = nÃºmero de preguntas que se quieren mostrar
 		List<Pregunta> preguntas = new ArrayList<Pregunta>();
 		try {
 			Connection con = Conexion.init();
