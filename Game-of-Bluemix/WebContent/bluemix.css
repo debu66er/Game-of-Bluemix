@@ -1,0 +1,207 @@
+body {
+	color: #5a5a5a;
+	background-color: #ffffff;
+	font-family: "HelveticaNeue-Light", sans-serif;
+	font-size:16px;
+}
+
+a {
+	text-decoration:none;
+}
+
+h1 {
+	color: #003c32;
+}
+
+h2 {
+	color: #005448;
+}
+
+h3 {
+	color: #006d5d;
+}
+
+.banner {
+	position: fixed; 
+	top: 0px; 
+	left: 0px;
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	background-color: #ffffff;	
+	border-bottom: solid 1px #e5e5e5; 
+	z-index: 99;
+	padding-left: 5px;
+} 
+
+.admin {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 50px;
+	width: 10%;
+	border-left: solid 1px #e5e5e5;
+	text-align: center;
+}
+
+.menu {
+	position: absolute;
+	top: 0px;
+	right: 12%;
+	height: 50px;
+	text-align: center;
+}
+
+.enlace {
+	color: #323232;
+}
+
+.titulo {
+	color: #323232; 
+	font-weight: bold;
+}
+
+.titulo:hover, .enlace:hover {
+	color: #3b6caa;
+}
+
+.cuerpo {
+	position: absolute;
+	top: 60px;
+	bottom: 20px;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.submit {
+	cursor: pointer;
+}
+
+.caja1 {
+	position: relative;
+	background: no-repeat;
+	background-position: 0px 40px;
+	background-color: #003c32;
+	background-image: url("images/background.png");
+	background-size: 100%;
+	display: inline-block;
+	height: 80%;
+	width: 28%;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 105px;
+	color: #ffffff;
+}
+
+.caja2, .caja3, .caja4 {
+	position: relative;
+	display: inline-block;
+	height: 80%;
+	width: 22%;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 420px;
+}
+
+.caja5 {
+	position: relative;
+	background-color: #003c32;
+	display: inline-block;
+	height: 80%;
+	width: 6%;
+	float: left;
+	line-height: 420px;
+}
+
+.caja2 {
+	background-color: #005448;
+}
+
+.caja3 {
+	background-color: #006d5d;
+}
+
+.caja4 {
+	background-color: #008571;
+}
+
+.enlacecaja {
+	color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=text], textarea, input[type=email], input[type=tel], input[type=password], select, option {
+    color: #5a5a5a;
+	background-color: #ffffff;
+	border: 1px solid #5a5a5a;
+	padding: 5px 5px 5px 10px;
+}
+
+input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+ 	outline: 0px;
+ 	border: 1px solid #006d71;
+ 	color: #006d71;
+}
+
+input[type=submit], button {
+	background-color: #ffffff;
+	border: 1px solid #5a5a5a;
+	padding: 10px 25px 10px 25px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, button:hover {
+	outline: 0px;
+	color: #006d71;
+	border: 1px solid #006d71;
+	text-decoration: underline;
+}	
+
+table.form {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+tr {
+	height: 40px; 
+}
+
+tr.par {
+	background-color: #ffffff;
+}
+
+tr.impar {
+	background-color: #f5f5f5;
+}
+
+th {
+	color: #5a5a5a;
+	background-color: #e0e0e0;
+}
+
+td.form {
+	border: 0px;
+	width: 200px;
+}
+
+td.input {
+	width: 5%;
+	text-align:center;
+	padding: 5px 5px 5px 5px;
+}
+
+textarea {
+	width: 98.7%;
+}
+
+.subtitulo {
+	font-size: 12px;
+	font-weight: normal;
+}
