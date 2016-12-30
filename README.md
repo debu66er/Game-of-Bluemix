@@ -1,3 +1,4 @@
 Hello friend!
 
-This application has been created as support for the performance of Games of Bluemix Workshops.
+This application has been created as support for the performance of Games of Bluemix Workshops. 
+Playing with git.
