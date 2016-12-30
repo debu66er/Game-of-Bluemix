@@ -22,6 +22,7 @@
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/classes/**" />
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
 			<fileset dir="${basedir}/WebContent" includes="images/**" />
+			<fileset dir="${basedir}/WebContent" includes="fonts/**" />
 			<fileset dir="${basedir}/WebContent" includes="*.html" />
 			<fileset dir="${basedir}/WebContent" includes="*.jsp" />
 			<fileset dir="${basedir}/WebContent" includes="*.css" />
