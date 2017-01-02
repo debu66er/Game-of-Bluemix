@@ -168,7 +168,7 @@
 				Marketing. Usted puede ejercitar el derecho de acceso, rectificación, oposición y 
 				cancelación previstos en la Ley dirigiendo un escrito a International Business 
 				Machines S.A. (IBM), Santa Hortensia, 26-28, 28002 Madrid. IBM, o entidades 
-				seleccionadas por ésta, podrÃ¡n usar dichos datos para enviarle información comercial 
+				seleccionadas por ésta, podrán usar dichos datos para enviarle información comercial 
 				o de marketing sobre nuestros productos y servicios.</p>
 				
 				<p style="font-weight:bold"><input type="checkbox" name="contacto" value="no">Marca esta casilla si no deseas ser contactado.</p>
