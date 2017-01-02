@@ -4,7 +4,7 @@
 
 <html lang="es">
 	<head>
-		<title>Martes de Bluemix - Encuesta</title>
+		<title>Game of Bluemix - Encuesta</title>
 		<meta charset="UTF-8">
 		<meta name="author" content="Noelia Herranz">
 		<meta name="application-name" content="Martes de Bluemix">
@@ -15,10 +15,10 @@
 	
 	<body>
 		<div class="banner">
-			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Martes de Bluemix </a>
+			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Game of Bluemix </a>
 			<div class="admin"><a class="enlace" href="http://adminbmsl.mybluemix.net/" target="_blank">Administrador</a></div>
 			<div class="menu">
-				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">PrÃ³ximos eventos</a>
+				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
 				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interÃ©s</a>
 			</div>
 		</div>
@@ -28,7 +28,7 @@
 		%>
 		
 		<div class="cuerpo">
-			<h1>Â¡Gracias por tu asistencia!  Nos interesan mucho tus opiniones.</h1><br><br>
+			<h1>¡Gracias por tu asistencia!  Nos interesan mucho tu opinión</h1><br><br>
 			<form action="/encuesta" method="post">
 				<input type="hidden" name="pagina" value="encuesta">
 				<table class=form>
@@ -49,13 +49,13 @@
 						<td class="form"><input type="email" name="email" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete su e-mail')" oninput="setCustomValidity('')"/></td>
 					</tr>
 					<tr>
-						<td class="form">*TelÃ©fono: </td>
+						<td class="form">*Teléfono: </td>
 						<td class="form"><input type="tel" name="telefono" size=60 maxlength=12 required oninvalid="setCustomValidity('Por favor, complete su telï¿½fono')" oninput="setCustomValidity('')"/></td>
 					</tr>
 				</table>
 				<br><br>
 				
-				<h2>SatisfacciÃ³n general</h2>
+				<h2>Satisfacción general</h2>
 				<table class=form>
 					<tr>
 						<th></th>
@@ -66,7 +66,7 @@
 						<th>5</th>
 					</tr>
 					<tr class="par">
-						<td>ValoraciÃ³n general del evento</td>
+						<td>Valoración general del evento</td>
 						<td class="input"><input type="radio" name="vEvento" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vEvento" value="bajo"></td>
 						<td class="input"><input type="radio" name="vEvento" value="medio"></td>
@@ -74,7 +74,7 @@
 						<td class="input"><input type="radio" name="vEvento" value="mAlto"></td>
 					</tr>
 					<tr class="impar">
-						<td>ValoraciÃ³n del instructor/es</td>
+						<td>Valoración del instructor/es</td>
 						<td class="input"><input type="radio" name="vInstructor" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vInstructor" value="bajo"></td>
 						<td class="input"><input type="radio" name="vInstructor" value="medio"></td>
@@ -82,7 +82,7 @@
 						<td class="input"><input type="radio" name="vInstructor" value="mAlto"></td>
 					</tr>
 					<tr class="par">
-						<td>ValoraciÃ³n de la logÃ­stica, organizaciÃ³n y atenciÃ³n recibida</td>
+						<td>Valoración de la logÃ­stica, organización y atención recibida</td>
 						<td class="input"><input type="radio" name="vOrganizacion" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vOrganizacion" value="bajo"></td>
 						<td class="input"><input type="radio" name="vOrganizacion" value="medio"></td>
@@ -90,7 +90,7 @@
 						<td class="input"><input type="radio" name="vOrganizacion" value="mAlto"></td>
 					</tr>
 					<tr class="impar">
-						<td>ValoraciÃ³n de la agenda y contenido</td>
+						<td>Valoración de la agenda y contenido</td>
 						<td class="input"><input type="radio" name="vAgenda" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vAgenda" value="bajo"></td>
 						<td class="input"><input type="radio" name="vAgenda" value="medio"></td>
@@ -98,7 +98,7 @@
 						<td class="input"><input type="radio" name="vAgenda" value="mAlto"></td>
 					</tr>
 					<tr class="par">
-						<td>ValoraciÃ³n de las presentaciones</td>
+						<td>Valoración de las presentaciones</td>
 						<td class="input"><input type="radio" name="vPresentaciones" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vPresentaciones" value="bajo"></td>
 						<td class="input"><input type="radio" name="vPresentaciones" value="medio"></td>
@@ -106,7 +106,7 @@
 						<td class="input"><input type="radio" name="vPresentaciones" value="mAlto"></td>
 					</tr>
 					<tr class="impar">
-						<td>ValoraciÃ³n de los laboratorios</td>
+						<td>Valoración de los laboratorios</td>
 						<td class="input"><input type="radio" name="vLaboratorios" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vLaboratorios" value="bajo"></td>
 						<td class="input"><input type="radio" name="vLaboratorios" value="medio"></td>
@@ -114,15 +114,15 @@
 						<td class="input"><input type="radio" name="vLaboratorios" value="mAlto"></td>
 					</tr>
 					<tr class="par">
-						<td colspan="6" style="text-align:center;">ValoraciÃ³n: 1-muy mala, 2-mala, 3-normal, 4-buena, 5-excelente</td>
+						<td colspan="6" style="text-align:center;">Valoración: 1-muy mala, 2-mala, 3-normal, 4-buena, 5-excelente</td>
 					</tr>
 				</table>
 				<br><br>
 
 				<h2>Preferencias</h2>
-				<p>Â¿QuÃ© presentaciÃ³n y/o laboratorio te ha gustado mÃ¡s? Â¿Por quÃ©? &nbsp;&nbsp;&nbsp; <span class="subtitulo">(MÃ¡x. 500 caracteres)</span></p>
+				<p>¿Qué presentación y/o laboratorio te ha gustado más? ¿Por qué? &nbsp;&nbsp;&nbsp; <span class="subtitulo">(Máx. 500 caracteres)</span></p>
 				<textarea name="mas" rows="5" maxlength=500></textarea><br>
-				<p>Â¿QuÃ© presentaciÃ³n y/o laboratorio te ha gustado menos? Â¿Por quÃ©? &nbsp;&nbsp;&nbsp; <span class="subtitulo">(MÃ¡x. 500 caracteres)</span></p>
+				<p>¿Qué presentación y/o laboratorio te ha gustado menos? ¿Por qué? &nbsp;&nbsp;&nbsp; <span class="subtitulo">(Máx. 500 caracteres)</span></p>
 				<textarea name="menos" rows="5" maxlength=500></textarea><br>
 				<br><br>	
 				
@@ -137,7 +137,7 @@
 						<th>5</th>
 					</tr>
 					<tr class="par">
-						<td>Antes de asistir a este seminario, Â¿quÃ© nivel de conocimiento tenÃ­as sobre la materia vista en el curso?</td>
+						<td>Antes de asistir a este seminario, ¿qué nivel de conocimiento tenÃ­as sobre la materia vista en el curso?</td>
 						<td class="input"><input type="radio" name="cAntes" value="mBajo"></td>
 						<td class="input"><input type="radio" name="cAntes" value="bajo"></td>
 						<td class="input"><input type="radio" name="cAntes" value="medio"></td>
@@ -145,7 +145,7 @@
 						<td class="input"><input type="radio" name="cAntes" value="mAlto"></td>
 					</tr>
 					<tr class="impar">
-						<td>DespuÃ©s de asistir a este seminario, Â¿quÃ© nivel de conocimiento tienes sobre la materia vista en el curso?</td>
+						<td>Después de asistir a este seminario, ¿qué nivel de conocimiento tienes sobre la materia vista en el curso?</td>
 						<td class="input"><input type="radio" name="cDespues" value="mBajo"></td>
 						<td class="input"><input type="radio" name="cDespues" value="bajo"></td>
 						<td class="input"><input type="radio" name="cDespues" value="medio"></td>
@@ -153,22 +153,22 @@
 						<td class="input"><input type="radio" name="cDespues" value="mAlto"></td>
 					</tr>
 					<tr class="par">
-						<td colspan="6" style="text-align:center;">ValoraciÃ³n: 1-muy bajo, 2-bajo, 3-intermedio, 4-avanzado, 5-muy avanzado</td>
+						<td colspan="6" style="text-align:center;">Valoración: 1-muy bajo, 2-bajo, 3-intermedio, 4-avanzado, 5-muy avanzado</td>
 					</tr>
 				</table>
 				<br><br>
 				
-				<h2>Comentarios y/o sugerencias&nbsp;&nbsp;&nbsp; <span class="subtitulo">(MÃ¡x. 1000 caracteres)</span></h2>
+				<h2>Comentarios y/o sugerencias&nbsp;&nbsp;&nbsp; <span class="subtitulo">(Máx. 1000 caracteres)</span></h2>
 				<textarea name="sugerencias" rows="10" maxlength=1000></textarea><br>
 				<br><br>	
 				
-				<p style="text-align:justify;">En cumplimiento de lo dispuesto en la Ley OrgÃ¡nica 15/1999 de 13 de diciembre 
-				de ProtecciÃ³n de Datos de CarÃ¡cter Personal, le informamos que los datos personales 
-				que usted nos facilite serÃ¡n incorporados a nuestro/s fichero/s automatizado/s de 
-				Marketing. Usted puede ejercitar el derecho de acceso, rectificaciÃ³n, oposiciÃ³n y 
-				cancelaciÃ³n previstos en la Ley dirigiendo un escrito a International Business 
+				<p style="text-align:justify;">En cumplimiento de lo dispuesto en la Ley Orgánica 15/1999 de 13 de diciembre 
+				de Protección de Datos de Carácter Personal, le informamos que los datos personales 
+				que usted nos facilite serán incorporados a nuestro/s fichero/s automatizado/s de 
+				Marketing. Usted puede ejercitar el derecho de acceso, rectificación, oposición y 
+				cancelación previstos en la Ley dirigiendo un escrito a International Business 
 				Machines S.A. (IBM), Santa Hortensia, 26-28, 28002 Madrid. IBM, o entidades 
-				seleccionadas por Ã©sta, podrÃ¡n usar dichos datos para enviarle informaciÃ³n comercial 
+				seleccionadas por ésta, podrÃ¡n usar dichos datos para enviarle información comercial 
 				o de marketing sobre nuestros productos y servicios.</p>
 				
 				<p style="font-weight:bold"><input type="checkbox" name="contacto" value="no">Marca esta casilla si no deseas ser contactado.</p>

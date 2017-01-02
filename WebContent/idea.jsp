@@ -4,7 +4,7 @@
 
 <html lang="es">
 	<head>
-		<title>Martes de Bluemix - Idea</title>
+		<title>Game of Bluemix - Idea</title>
 		<meta charset="UTF-8">
 		<meta name="author" content="Noelia Herranz">
 		<meta name="application-name" content="Martes de Bluemix">
@@ -15,7 +15,7 @@
 	
 	<body>
 		<div class="banner">
-			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Martes de Bluemix </a>
+			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Game of Bluemix </a>
 			<div class="admin"><a class="enlace" href="http://adminbmsl.mybluemix.net/" target="_blank">Administrador</a></div>
 			<div class="menu">
 				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
