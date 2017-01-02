@@ -82,7 +82,7 @@
 						<td class="input"><input type="radio" name="vInstructor" value="mAlto"></td>
 					</tr>
 					<tr class="par">
-						<td>Valoración de la logÃ­stica, organización y atención recibida</td>
+						<td>Valoración de la logística, organización y atención recibida</td>
 						<td class="input"><input type="radio" name="vOrganizacion" value="mBajo"></td>
 						<td class="input"><input type="radio" name="vOrganizacion" value="bajo"></td>
 						<td class="input"><input type="radio" name="vOrganizacion" value="medio"></td>
@@ -137,7 +137,7 @@
 						<th>5</th>
 					</tr>
 					<tr class="par">
-						<td>Antes de asistir a este seminario, ¿qué nivel de conocimiento tenÃ­as sobre la materia vista en el curso?</td>
+						<td>Antes de asistir a este seminario, ¿qué nivel de conocimiento tení­as sobre la materia vista en el curso?</td>
 						<td class="input"><input type="radio" name="cAntes" value="mBajo"></td>
 						<td class="input"><input type="radio" name="cAntes" value="bajo"></td>
 						<td class="input"><input type="radio" name="cAntes" value="medio"></td>
