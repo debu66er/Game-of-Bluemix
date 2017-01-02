@@ -1,7 +1,7 @@
 <project name="Game of Bluemix Build Script" default="all" basedir=".">
 	
 	<property name="lib_dir" value="${basedir}/lib"/>
-	<property name="artifact_dir" value="${ARCHIVE_DIR}"/>
+	<property name="artifact_dir" value="${basedir}/build"/>
 
 	<target name="all" depends="compile, package, deploy">
 		<echo message="Build completed." />
