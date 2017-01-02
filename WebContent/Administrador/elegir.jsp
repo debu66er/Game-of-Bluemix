@@ -18,7 +18,7 @@
 		%>
 	
 		<div class="banner">
-			<a class="enlace" style="color: #ffffff;" href="admin.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a class="enlace" style="color: #ffffff;" href="/Administrador/admin.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 				Administrador </a>
 			<div class="admin">
 				<a class="enlace" href="http://gameofbluemix.mybluemix.net/"> Menú principal </a>
