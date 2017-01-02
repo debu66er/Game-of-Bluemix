@@ -13,6 +13,7 @@
 			<classpath>
 				<pathelement path="${lib_dir}/com.ibm.ws.javaee.servlet.3.0_1.0.1.jar"/>
 				<pathelement path="${lib_dir}/com.ibm.websphere.appserver.api.json_1.0.1.jar"/>
+				<pathelement path="${lib_dir}/javacsv.jar"/>
 			</classpath>
 		</javac>
 	</target>
@@ -23,6 +24,7 @@
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
 			<fileset dir="${basedir}/WebContent" includes="images/**" />
 			<fileset dir="${basedir}/WebContent" includes="fonts/**" />
+			<fileset dir="${basedir}/WebContent" includes="Administrador/**" />
 			<fileset dir="${basedir}/WebContent" includes="*.html" />
 			<fileset dir="${basedir}/WebContent" includes="*.jsp" />
 			<fileset dir="${basedir}/WebContent" includes="*.css" />

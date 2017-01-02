@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	<head>
+		<title>Administración Bluemix y SoftLayer</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Noelia Herranz & Mauro Lucchini">
+		<meta name="application-name" content="Administración">
+		<meta name="keywords" content="IBM, Bluemix, SoftLayer, Lunes, Jueves, Cloud">
+		<link rel="stylesheet" href="/Administrador/admin.css" type="text/css" media="all"/>
+		<link rel="icon" type="image/png" href="images/favicon.png">
+	</head>
+	
+	<body class="cuerpo">
+		<h1>Portal de administración</h1><br><br>
+		<form action="/index" method="POST">
+			<input type="hidden" name="pagina" value="index">
+			<h2>Selecciona la página que quieres administrar</h2><br>
+			<input type="radio" name="sesion" id="pagBluemix" value="bluemix" required><label for="pagBluemix"> Lunes de Bluemix</label><br><br>
+			<input type="radio" name="sesion" id="pagSoftlayer" value="softlayer"><label for="pagSoftlayer"> Jueves de SoftLayer</label><br><br>
+			<br><br><br>
+			<label for="user">Usuario: </label><input type="text" name="user" required><br><br>
+			<label for="pass">Contraseña: </label><input type="password" name="pass" required><br><br>
+			<!-- Aquí habría que autenticarlo con el signle sign on... De momento dejo pasar con mi pass -->
+			<br>
+			<input type="submit" value="Login">
+		</form>	
+	</body>
+</html>
