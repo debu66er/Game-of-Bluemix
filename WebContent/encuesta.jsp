@@ -19,7 +19,7 @@
 			<div class="admin"><a class="enlace" href="/Administrador/index.html" target="_blank">Administrador</a></div>
 			<div class="menu">
 				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
-				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interÃ©s</a>
+				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
 			</div>
 		</div>
 			
@@ -49,10 +49,6 @@
 						<td class="form"><input type="tel" name="telefono" size=60 maxlength=12 required oninvalid="setCustomValidity('Por favor, complete su telï¿½fono')" oninput="setCustomValidity('')"/></td>
 					</tr>
 					
-						<tr>
-						<td class="form">*Nombre del evento: </td>
-						<td class="form"><input type="text" name="evento" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete el nombre del evento')" oninput="setCustomValidity('')"/></td>
-					</tr>
 				</table>
 				<br><br>
 				
@@ -88,7 +84,29 @@
 				</table>
 				<br><br>
 				
-				
+				<h2>Ciudad donde se ha realizado el Workshop</h2>
+				<table class=form>
+					<tr class="par">
+					<td>Barcelona</td>
+						<td class="input"><input type="radio" name="ciudad" value="barcelona"></td>
+						
+					</tr>
+					<tr class="impar">
+						<td>Bilbao</td>
+						<td class="input"><input type="radio" name="ciudad" value="bilbao"></td>
+					</tr>
+					
+					<tr class="par">
+						<td>Madrid</td>
+						<td class="input"><input type="radio" name=ciudad" value="madrid"></td>
+					</tr>
+					<tr class="impar">
+						<td>Otra</td>
+						<td class="input"><input type="radio" name="ciudad" value="otra"></td>
+					</tr>
+				</table>
+				<br><br>
+
 				
 				<h2>Satisfacción general</h2>
 				<table class=form>
