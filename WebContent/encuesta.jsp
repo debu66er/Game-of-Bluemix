@@ -77,9 +77,6 @@
 					<tr class="impar">
 						<td>Game of Bluemix: Experienced - Data Analytics</td>
 						<td class="input"><input type="radio" name="evento" value="data&analytics"></td>
-						
-					<tr class="par">
-						
 					</tr>
 				</table>
 				<br><br>
