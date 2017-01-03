@@ -58,9 +58,9 @@ public class Encuesta {
 								+ nombre + "', '" 
 								+ empresa + "', '" 
 								+ email + "', '" 
-								+ telefono + "', "
+								+ telefono + "', '"
 								+ evento + "', '" 
-								+ ciudad + "', '" 
+								+ ciudad + "', " 
 								+ vEvento + ", " 
 								+ vInstructor + ", " 
 								+ vOrganizacion + ", " 
@@ -73,6 +73,8 @@ public class Encuesta {
 								+ cDespues + ", '" 
 								+ sugerencias + "', '" 
 								+ contacto + "')";
+			
+			System.out.println(qInsert);
 			
 			filas = st.executeUpdate(qInsert);
 			
