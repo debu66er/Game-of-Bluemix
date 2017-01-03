@@ -12,6 +12,7 @@ import com.ibm.conexion.Conexion;
 public class Encuesta {
 	
 	public void guardarDatos (HttpServletRequest request) {
+		
 		HttpSession sesion=request.getSession();
 		String mensaje;
 		boolean correcto = true;
@@ -19,18 +20,20 @@ public class Encuesta {
 		
 		sesion.setAttribute("empresa", request.getParameter("empresa"));
 		
-		String evento = null, nombre = null, empresa = null, email = null, telefono = null;
+		String evento = null, nombre = null, empresa = null, email = null, telefono = null, ciudad =null;
 		int vEvento = 0, vInstructor = 0, vOrganizacion = 0, vAgenda = 0, vPresentaciones = 0, vLaboratorios = 0;
 		String mas = null, menos = null;
 		int cAntes = 0, cDespues = 0;
 		String sugerencias = null;
 		String contacto = null;
 
-		evento = request.getParameter("evento");
+		
 		nombre = request.getParameter("nombre");
 		empresa = request.getParameter("empresa");
 		email = request.getParameter("email");
 		telefono = request.getParameter("telefono");
+		evento = request.getParameter("evento");
+		ciudad = request.getParameter("ciudad");
 		vEvento = aEntero(request.getParameter("vEvento"));
 		vInstructor = aEntero(request.getParameter("vInstructor"));
 		vOrganizacion = aEntero(request.getParameter("vOrganizacion"));
@@ -53,11 +56,12 @@ public class Encuesta {
 			Statement st = con.createStatement(); 
 			
 			String qInsert = "INSERT INTO ENCUESTA VALUES(CURRENT_TIMESTAMP, '"
-								+ evento + "', '" 
 								+ nombre + "', '" 
 								+ empresa + "', '" 
 								+ email + "', '" 
 								+ telefono + "', "
+								+ evento + "', '" 
+								+ ciudad + "', '" 
 								+ vEvento + ", " 
 								+ vInstructor + ", " 
 								+ vOrganizacion + ", " 

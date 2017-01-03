@@ -26,17 +26,6 @@ public class gestionTablas {
 				System.out.println("#### ENCUESTA table already exists...");
 			}
 			
-			rs = metadata.getTables(null, null, "ideasl", null); 
-			if(!rs.next())
-			{
-				System.out.println("#### Creating the table IDEASL...");
-				pstmt = con.prepareStatement(Tablas.getIdeaSL());
-				pstmt.executeUpdate();
-				pstmt.close();
-			} else {
-				System.out.println("#### IDEASL table already exists...");
-			}
-			
 			rs = metadata.getTables(null, null, "ideabm", null); 
 			if(!rs.next())
 			{
@@ -59,17 +48,6 @@ public class gestionTablas {
 				System.out.println("#### CUESTIONARIOBM table already exists...");
 			}
 			
-			rs = metadata.getTables(null, null, "cuestionariosl", null); 
-			if(!rs.next())
-			{
-				System.out.println("#### Creating the table CUESTIONARIOSL...");
-				pstmt = con.prepareStatement(Tablas.getCuestionarioSL());
-				pstmt.executeUpdate();
-				pstmt.close();
-			} else {
-				System.out.println("#### CUESTIONARIOSL table already exists...");
-			}
-			
 			rs = metadata.getTables(null, null, "eventosbm", null); 
 			if(!rs.next())
 			{
@@ -79,17 +57,6 @@ public class gestionTablas {
 				pstmt.close();
 			} else {
 				System.out.println("#### EVENTOSBM table already exists...");
-			}
-			
-			rs = metadata.getTables(null, null, "eventossl", null); 
-			if(!rs.next())
-			{
-				System.out.println("#### Creating the table EVENTOSSL...");
-				pstmt = con.prepareStatement(Tablas.getEventosSL());
-				pstmt.executeUpdate();
-				pstmt.close();
-			} else {
-				System.out.println("#### EVENTOSSL table already exists...");
 			}
 			
 			rs = metadata.getTables(null, null, "enlacesbm", null); 
@@ -103,17 +70,6 @@ public class gestionTablas {
 				System.out.println("#### ENLACESBM table already exists...");
 			}
 			
-			rs = metadata.getTables(null, null, "enlacessl", null); 
-			if(!rs.next())
-			{
-				System.out.println("#### Creating the table ENLACESSL...");
-				pstmt = con.prepareStatement(Tablas.getEnlacesSL());
-				pstmt.executeUpdate();
-				pstmt.close();
-			} else {
-				System.out.println("#### ENLACESSL table already exists...");
-			}
-			
 			rs = metadata.getTables(null, null, "materialbm", null); 
 			if(!rs.next())
 			{
@@ -124,18 +80,7 @@ public class gestionTablas {
 			} else {
 				System.out.println("#### MATERIALBM table already exists...");
 			}
-			
-			rs = metadata.getTables(null, null, "materialsl", null); 
-			if(!rs.next())
-			{
-				System.out.println("#### Creating the table MATERIALSL...");
-				pstmt = con.prepareStatement(Tablas.getMaterialSL());
-				pstmt.executeUpdate();
-				pstmt.close();
-			} else {
-				System.out.println("#### MATERIALSL table already exists...");
-			}
-			
+
 			rs = metadata.getTables(null, null, "categoria", null); 
 			if(!rs.next())
 			{
@@ -153,7 +98,7 @@ public class gestionTablas {
 	
 	public static void borrarTablas(Connection con) {
 		PreparedStatement pstmt = null;
-		String tabla[] = {"ENCUESTA", "IDEASL", "IDEABM", "CUESTIONARIOBM", "CUESTIONARIOSL", "EVENTOSBM", "EVENTOSSL", "ENLACESBM", "ENLACESSL", "MATERIALBM", "MATERIALSL", "CATEGORIA"};
+		String tabla[] = {"ENCUESTA", "IDEABM", "CUESTIONARIOBM", "EVENTOSBM", "ENLACESBM", "MATERIALBM", "CATEGORIA"};
 		
 		try {
 			for (int i=0; i<tabla.length; i++) {
