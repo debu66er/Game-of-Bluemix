@@ -95,7 +95,7 @@
 					
 					<tr class="par">
 						<td>Madrid</td>
-						<td class="input"><input type="radio" name=ciudad" value="madrid"></td>
+						<td class="input"><input type="radio" name="ciudad" value="madrid"></td>
 					</tr>
 					<tr class="impar">
 						<td>Otra</td>

@@ -26,7 +26,6 @@ public class Encuesta {
 		int cAntes = 0, cDespues = 0;
 		String sugerencias = null;
 		String contacto = null;
-
 		
 		nombre = request.getParameter("nombre");
 		empresa = request.getParameter("empresa");
