@@ -33,10 +33,6 @@
 				<input type="hidden" name="pagina" value="encuesta">
 				<table class=form>
 					<tr>
-						<td class="form">*Nombre del evento: </td>
-						<td class="form"><input type="text" name="evento" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete el nombre del evento')" oninput="setCustomValidity('')"/></td>
-					</tr>
-					<tr>
 						<td class="form">*Nombre y apellidos: </td>
 						<td class="form"><input type="text" name="nombre" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete su nombre y apellidos')" oninput="setCustomValidity('')"/></td>
 					</tr>
@@ -52,8 +48,47 @@
 						<td class="form">*Teléfono: </td>
 						<td class="form"><input type="tel" name="telefono" size=60 maxlength=12 required oninvalid="setCustomValidity('Por favor, complete su telï¿½fono')" oninput="setCustomValidity('')"/></td>
 					</tr>
+					
+						<tr>
+						<td class="form">*Nombre del evento: </td>
+						<td class="form"><input type="text" name="evento" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete el nombre del evento')" oninput="setCustomValidity('')"/></td>
+					</tr>
 				</table>
 				<br><br>
+				
+				<h2>Workshop realizado</h2>
+				<table class=form>
+					<tr class="par">
+						<td>Game of Bluemix: Essential</td>
+						<td class="input"><input type="radio" name="evento" value="essential"></td>
+					</tr>
+					<tr class="impar">
+						<td>Game of Bluemix: Experienced - CloudFoundry & Openwhisk</td>
+						<td class="input"><input type="radio" name="evento" value="cloudfoundry&openwhisk"></td>
+					</tr>
+					<tr class="par">
+						<td>Game of Bluemix: Experienced - Infrastructure</td>
+						<td class="input"><input type="radio" name="evento" value="infrastructure"></td>
+					</tr>
+					<tr class="impar">
+						<td>Game of Bluemix: Experienced - Containers</td>
+						<td class="input"><input type="radio" name="evento" value="containers"></td>
+					</tr>
+					<tr class="par">
+						<td>Game of Bluemix: Experienced - Mobile & IoT</td>
+						<td class="input"><input type="radio" name="evento" value="mobile&IoT"></td>
+					</tr>
+					<tr class="impar">
+						<td>Game of Bluemix: Experienced - Data Analytics</td>
+						<td class="input"><input type="radio" name="evento" value="data&analytics"></td>
+						
+					<tr class="par">
+						
+					</tr>
+				</table>
+				<br><br>
+				
+				
 				
 				<h2>Satisfacción general</h2>
 				<table class=form>
