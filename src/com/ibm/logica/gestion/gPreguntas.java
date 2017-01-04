@@ -63,8 +63,9 @@ public class gPreguntas {
 					+ "', RESP4 = '" + resp4 
 					+ "', CORRECTA = '" + correcta
 					+ "', OCULTA = '" + oculta
-					+ "' WHERE ID = '" + id + "'"
-					+ "AND WORKSHOP = '" + workshop + "'";
+					+ "', WORKSHOP = '" + workshop
+					+ "' WHERE ID = '" + id + "'";
+			
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {

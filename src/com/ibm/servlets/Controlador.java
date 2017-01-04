@@ -22,7 +22,6 @@ public class Controlador extends HttpServlet {
 		HttpSession session=request.getSession();
 		try {
 			if (request.getParameter("pagina").equals("retoworkshop")) {
-
 				String workshop = request.getParameter("workshop");
 				session.setAttribute("workshop", workshop);	
 				request.getRequestDispatcher("/reto.jsp").forward(request, response);

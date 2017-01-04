@@ -23,7 +23,16 @@
 				<table class=form>
 					<tr>
 					<td class="form">Workshop</td>
-						<td class="form"><input type="text" name="workshop" size=50 maxlength=200 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')"></td>
+					<td class="form">
+						<select name="workshop" required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')">
+						 	<option value="Essentials">Essentials</option> 
+						   	<option value="Cloudfoundry & Openwhisk">Cloudfoundry & Openwhisk</option> 
+						   	<option value="Infrastructure">Infrastructure</option>
+						   	<option value="Containers">Containers</option> 
+						   	<option value="Mobile & IoT">Mobile & IoT</option> 
+						   	<option value="Data & Analytics">Data & Analytics</option>
+						</select>
+					</td>
 					</tr><tr>	
 						<td class="form">Pregunta</td>
 						<td class="form"><input type="text" name="preg" size=50 maxlength=200 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')"></td>
