@@ -35,27 +35,27 @@
 				<table class=form>
 					<tr class="par">
 						<td>Game of Bluemix: Essential</td>
-						<td class="input"><input type="radio" name="evento" value="essential"></td>
+						<td class="input"><input type="radio" name="workshop" value="essential"></td>
 					</tr>
 					<tr class="impar">
 						<td>Game of Bluemix: Experienced - CloudFoundry & Openwhisk</td>
-						<td class="input"><input type="radio" name="evento" value="cloudfoundry&openwhisk"></td>
+						<td class="input"><input type="radio" name="workshop" value="cloudfoundry&openwhisk"></td>
 					</tr>
 					<tr class="par">
 						<td>Game of Bluemix: Experienced - Infrastructure</td>
-						<td class="input"><input type="radio" name="evento" value="infrastructure"></td>
+						<td class="input"><input type="radio" name="workshop" value="infrastructure"></td>
 					</tr>
 					<tr class="impar">
 						<td>Game of Bluemix: Experienced - Containers</td>
-						<td class="input"><input type="radio" name="evento" value="containers"></td>
+						<td class="input"><input type="radio" name="workshop" value="containers"></td>
 					</tr>
 					<tr class="par">
 						<td>Game of Bluemix: Experienced - Mobile & IoT</td>
-						<td class="input"><input type="radio" name="evento" value="mobile&IoT"></td>
+						<td class="input"><input type="radio" name="workshop" value="mobile&IoT"></td>
 					</tr>
 					<tr class="impar">
 						<td>Game of Bluemix: Experienced - Data Analytics</td>
-						<td class="input"><input type="radio" name="evento" value="data&analytics"></td>
+						<td class="input"><input type="radio" name="workshop" value="data&analytics"></td>
 					</tr>
 				</table>
 				<br><br>
