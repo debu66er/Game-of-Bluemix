@@ -2,10 +2,10 @@ package com.ibm.logica.modelo;
 
 public class Pregunta {
 	
-	private String pregunta, resp1, resp2, resp3, resp4, oculta;
+	private String pregunta, resp1, resp2, resp3, resp4, oculta, workshop;
 	private int id, correcta;
 	
-	public Pregunta(int id, String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String oculta) {
+	public Pregunta(int id, String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String oculta, String workshop) {
 		this.id = id;
 		this.pregunta = pregunta;
 		this.resp1 = resp1;
@@ -14,6 +14,7 @@ public class Pregunta {
 		this.resp4 = resp4;
 		this.correcta = correcta;
 		this.oculta = oculta;
+		this.workshop = workshop;
 	}
 
 	public String getPregunta() {
@@ -73,5 +74,13 @@ public class Pregunta {
 	
 	public int getId() {
 		return id;
+	}
+
+	public String getWorkshop() {
+		return workshop;
+	}
+
+	public void setWorkshop(String workshop) {
+		this.workshop = workshop;
 	}
 }

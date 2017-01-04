@@ -237,12 +237,13 @@ public class adminControlador extends HttpServlet {
 			String resp3 = request.getParameter("resp3");
 			String resp4 = request.getParameter("resp4");
 			int correcta = Integer.parseInt(request.getParameter("correcta"));
+			String workshop = request.getParameter("workshop");
 			String oculta = request.getParameter("oculta");
 			
 			if ((oculta == null) || (!(oculta.equals("yes")))) oculta = "no";
 			
 			gPreguntas pregunta = new gPreguntas();
-			pregunta.aniadirPregunta(preg, resp1, resp2, resp3, resp4, correcta, oculta);
+			pregunta.aniadirPregunta(preg, resp1, resp2, resp3, resp4, correcta, oculta, workshop);
 			try {
 				response.sendRedirect("/Administrador/preguntas.jsp");
 			} catch (IOException e) {
@@ -313,11 +314,12 @@ public class adminControlador extends HttpServlet {
 			String resp4 = request.getParameter("resp4");
 			int correcta = Integer.parseInt(request.getParameter("correcta"));
 			String oculta = request.getParameter("oculta");
+			String workshop = request.getParameter("workshop");
 			
 			if ((oculta == null) || (!(oculta.equals("yes")))) oculta = "no";
 			
 			gPreguntas pregunta = new gPreguntas();
-			pregunta.editarPregunta(id, preg, resp1, resp2, resp3, resp4, correcta, oculta);
+			pregunta.editarPregunta(id, preg, resp1, resp2, resp3, resp4, correcta, oculta, workshop);
 			try {
 				response.sendRedirect("/Administrador/preguntas.jsp");
 			} catch (IOException e) {

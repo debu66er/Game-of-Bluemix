@@ -40,6 +40,7 @@
 											
 							<input type="hidden" name="id" value="<%= pregunta.getId() %>">
 							<input type="hidden" name="preg" value="<%= pregunta.getPregunta() %>">
+							<input type="hidden" name="workshop" value="<%= pregunta.getWorkshop() %>">
 							<input type="hidden" name="resp1" value="<%= pregunta.getResp1() %>">
 							<input type="hidden" name="resp2" value="<%= pregunta.getResp2() %>">
 							<input type="hidden" name="resp3" value="<%= pregunta.getResp3() %>">
@@ -52,7 +53,7 @@
 							<h3><%= pregunta.getPregunta() %> <% if (pregunta.getOculta().equals("yes")) { %> (O) <% } %>
 							&nbsp;&nbsp;<input type="image" src="images/editar.png" alt="Editar" onClick="document.getElementById('<%= accion %>').value='editar';">
 							<input type="image" src="images/eliminar.png" alt="Eliminar" onClick="document.getElementById('<%= accion %>').value='eliminar'; return confirm('¿Estás seguro de que deseas eliminar esta pregunta?');"></h3>
-							
+							<p><%= pregunta.getWorkshop() %>
 							<p><%= pregunta.getResp1() %> <% if (pregunta.getCorrecta() == 1) { %> - (C) <% } %></p>
 							<p><%= pregunta.getResp2() %> <% if (pregunta.getCorrecta() == 2) { %> - (C) <% } %></p>
 							<p><%= pregunta.getResp3() %> <% if (pregunta.getCorrecta() == 3) { %> - (C) <% } %></p>

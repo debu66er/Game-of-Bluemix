@@ -145,7 +145,7 @@ public class Lista {
 				resp4 = rs.getString("resp4");
 				correcta = rs.getInt("correcta");
 				
-				Pregunta preg = new Pregunta (pregunta, resp1, resp2, resp3, resp4, correcta);
+				Pregunta preg = new Pregunta (pregunta, resp1, resp2, resp3, resp4, correcta, workshop);
 				preguntas.add(preg);
 			}
 			

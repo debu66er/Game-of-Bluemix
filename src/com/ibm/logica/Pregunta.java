@@ -2,16 +2,17 @@ package com.ibm.logica;
 
 public class Pregunta {
 	
-	private String pregunta, resp1, resp2, resp3, resp4;
+	private String pregunta, resp1, resp2, resp3, resp4, workshop;
 	private int correcta;
 	
-	public Pregunta(String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta) {
+	public Pregunta(String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String workshop) {
 		this.pregunta = pregunta;
 		this.resp1 = resp1;
 		this.resp2 = resp2;
 		this.resp3 = resp3;
 		this.resp4 = resp4;
 		this.correcta = correcta;
+		this.workshop=workshop;
 	}
 
 	public String getPregunta() {
@@ -60,5 +61,13 @@ public class Pregunta {
 	
 	public void setCorrecta(int correcta) {
 		this.correcta = correcta;
+	}
+
+	public String getWorkshop() {
+		return workshop;
+	}
+
+	public void setWorkshop(String workshop) {
+		this.workshop = workshop;
 	}
 }

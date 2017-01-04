@@ -23,6 +23,9 @@
 				<input type="hidden" name="id" value="<%= request.getParameter("id") %>">
 				<table class=form>
 					<tr>
+					<td class="form">Workshop</td>
+						<td class="form"><input type="text" name="workshop" size=50 maxlength=200 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')" value="<%= request.getParameter("workshop") %>"></td>
+					</tr><tr>
 						<td class="form">Pregunta</td>
 						<td class="form"><input type="text" name="preg" size=50 maxlength=200 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')" value="<%= request.getParameter("preg") %>"></td>
 					</tr><tr>	
