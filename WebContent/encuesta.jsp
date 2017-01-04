@@ -55,7 +55,7 @@
 				<h2>Workshop realizado</h2>
 				<table class=form>
 					<tr class="par">
-						<td>Game of Bluemix: Essential</td>
+						<td>Game of Bluemix: Essentials</td>
 						<td class="input"><input type="radio" name="evento" value="essential"></td>
 					</tr>
 					<tr class="impar">
