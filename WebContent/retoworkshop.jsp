@@ -30,7 +30,7 @@
 		<div class="cuerpo">
 			<h1>Seleccione que workshop esta realizando</h1><br><br>
 			<form action="/encuesta" method="post">
-				<input type="hidden" name="pagina" value="encuesta">
+				<input type="hidden" name="pagina" value="retoworkshop">
 
 				<table class=form>
 					<tr class="par">
