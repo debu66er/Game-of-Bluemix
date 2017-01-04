@@ -18,22 +18,14 @@ public class gEventos {
 	private Statement st = null;
 	private ResultSet rs = null;
 
-	public List<Evento> getEvento(String sesion) {
+	public List<Evento> getEvento() {
 		
 		List<Evento> eventos = new ArrayList<Evento>();
 		
 		try {
 			con = Conexion.init();
-			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "EVENTOSBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "EVENTOSSL";
-			}
-			
-			rs = st.executeQuery("SELECT * FROM " + tabla + " ORDER BY FECHA");
+			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);			
+			rs = st.executeQuery("SELECT * FROM EVENTOSBM ORDER BY FECHA");
 			String nombre, lugar, fecha, responsable, contacto, oculto;
 			DateFormat form = new SimpleDateFormat("dd.MM.yyyy");
 			
@@ -57,24 +49,17 @@ public class gEventos {
 		return eventos;
 	}
 	
-	public void editarEvento(String sesion, String nombre, String lugar, String fecha, String responsable, String contacto, String oculto) {
+	public void editarEvento(String nombre, String lugar, String fecha, String responsable, String contacto, String oculto) {
 		String query;
 		
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "EVENTOSBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "EVENTOSSL";
-			}
-			
+								
 			String fechas[] = fecha.split("[.]");
 			fecha = fechas[2] + "-" + fechas[1] + "-" + fechas[0];
 			
-			query = "UPDATE " + tabla + " SET RESPONSABLE = '" + responsable + "', CONTACTO = '" + contacto + "', OCULTO = '" + oculto + "' WHERE NOMBRE = '" + nombre + "' AND LUGAR = '" + lugar + "' AND FECHA = '" + fecha + "'";
+			query = "UPDATE EVENTOSBM SET RESPONSABLE = '" + responsable + "', CONTACTO = '" + contacto + "', OCULTO = '" + oculto + "' WHERE NOMBRE = '" + nombre + "' AND LUGAR = '" + lugar + "' AND FECHA = '" + fecha + "'";
 			
 			st.executeUpdate(query);
 			con.close();
@@ -83,23 +68,16 @@ public class gEventos {
 		} 
 	}
 
-	public void eliminarEvento(String sesion, String nombre, String fecha, String lugar) {
+	public void eliminarEvento(String nombre, String fecha, String lugar) {
 		String query;
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "EVENTOSBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "EVENTOSSL";
-			}
-			
+									
 			String fechas[] = fecha.split("[.]");
 			fecha = fechas[2] + "-" + fechas[1] + "-" + fechas[0];
 			
-			query = "DELETE FROM " + tabla + " WHERE NOMBRE='" + nombre + "' AND FECHA = '" + fecha + "' AND LUGAR = '" + lugar + "'"; 
+			query = "DELETE FROM EVENTOSBM WHERE NOMBRE='" + nombre + "' AND FECHA = '" + fecha + "' AND LUGAR = '" + lugar + "'"; 
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {
@@ -107,23 +85,16 @@ public class gEventos {
 		}
 	}
 
-	public void aniadirEvento(String sesion, String nombre, String fecha, String lugar, String responsable, String contacto, String oculto) {
+	public void aniadirEvento(String nombre, String fecha, String lugar, String responsable, String contacto, String oculto) {
 		String query;
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "EVENTOSBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "EVENTOSSL";
-			}
-			
+					
 			String fechas[] = fecha.split("[.]");
 			fecha = fechas[2] + "-" + fechas[1] + "-" + fechas[0];
 			
-			query = "INSERT INTO " + tabla + " VALUES" + "('"	+ nombre + "','" + lugar + "','" + fecha + "','" + responsable + "','" + contacto + "','" + oculto + "')";
+			query = "INSERT INTO EVENTOSBM VALUES" + "('"	+ nombre + "','" + lugar + "','" + fecha + "','" + responsable + "','" + contacto + "','" + oculto + "')";
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {

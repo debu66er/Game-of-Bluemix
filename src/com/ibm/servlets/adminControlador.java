@@ -28,13 +28,10 @@ public class adminControlador extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
 		String pagina = request.getParameter("pagina");
-		String sesion = (String) request.getSession().getAttribute("sesion");
 
 		if (pagina.equals("index")) {
 			try {
-				sesion = request.getParameter("sesion");
-				request.getSession().setAttribute("sesion", sesion);
-				
+				//pendiente añadir servicio SSO
 				if (request.getParameter("pass").equals("pass1234")) 
 				request.getRequestDispatcher("/Administrador/elegir.jsp").forward(request, response);
 			} catch (ServletException e) {
@@ -78,7 +75,7 @@ public class adminControlador extends HttpServlet {
 				}
 				else if (accion.equals("eliminar")) {
 					gEnlaces enlace = new gEnlaces();
-					enlace.eliminarEnlace(sesion, link);
+					enlace.eliminarEnlace(link);
 					response.sendRedirect("/Administrador/enlaces.jsp");
 				}
 			} catch (ServletException e) {
@@ -100,7 +97,7 @@ public class adminControlador extends HttpServlet {
 				}
 				else if (accion.equals("eliminar")) {
 					gEventos evento = new gEventos();
-					evento.eliminarEvento(sesion, nombre, fecha, lugar);
+					evento.eliminarEvento(nombre, fecha, lugar);
 					response.sendRedirect("/Administrador/geventos.jsp");
 				}
 			} catch (ServletException e) {
@@ -120,7 +117,7 @@ public class adminControlador extends HttpServlet {
 				}
 				else if (accion.equals("eliminar")) {
 					gMaterial material = new gMaterial();
-					material.eliminarMaterial(sesion, link);
+					material.eliminarMaterial(link);
 					response.sendRedirect("/Administrador/material.jsp");
 				}
 			} catch (ServletException e) {
@@ -156,7 +153,7 @@ public class adminControlador extends HttpServlet {
 				}
 				else if (accion.equals("eliminar")) {
 					gPreguntas pregunta = new gPreguntas();
-					pregunta.eliminarPregunta(sesion, id);
+					pregunta.eliminarPregunta(id);
 					response.sendRedirect("/Administrador/preguntas.jsp");
 				}
 			} catch (ServletException e) {
@@ -175,7 +172,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculto == null) || (!(oculto.equals("yes")))) oculto = "no";
 			
 			gEnlaces enlace = new gEnlaces();
-			enlace.aniadirEnlace(sesion, alias, categoria, link, oculto);
+			enlace.aniadirEnlace(alias, categoria, link, oculto);
 			try {
 				response.sendRedirect("/Administrador/enlaces.jsp");
 			} catch (IOException e) {
@@ -194,7 +191,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculto == null) || (!(oculto.equals("yes")))) oculto = "no";
 			
 			gEventos evento = new gEventos();
-			evento.aniadirEvento(sesion, nombre, fecha, lugar, responsable, contacto, oculto);
+			evento.aniadirEvento(nombre, fecha, lugar, responsable, contacto, oculto);
 			try {
 				response.sendRedirect("/Administrador/eventos.jsp");
 			} catch (IOException e) {
@@ -212,7 +209,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculto == null) || (!(oculto.equals("yes")))) oculto = "no";
 			
 			gMaterial material = new gMaterial();
-			material.aniadirMaterial(sesion, nombre, descripcion, categoria, link, oculto);
+			material.aniadirMaterial(nombre, descripcion, categoria, link, oculto);
 			try {
 				response.sendRedirect("/Administrador/material.jsp");
 			} catch (IOException e) {
@@ -245,7 +242,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculta == null) || (!(oculta.equals("yes")))) oculta = "no";
 			
 			gPreguntas pregunta = new gPreguntas();
-			pregunta.aniadirPregunta(sesion, preg, resp1, resp2, resp3, resp4, correcta, oculta);
+			pregunta.aniadirPregunta(preg, resp1, resp2, resp3, resp4, correcta, oculta);
 			try {
 				response.sendRedirect("/Administrador/preguntas.jsp");
 			} catch (IOException e) {
@@ -262,7 +259,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculto == null) || (!(oculto.equals("yes")))) oculto = "no";
 			
 			gEnlaces enlace = new gEnlaces();
-			enlace.editarEnlace(sesion, alias, categoria, link, oculto);
+			enlace.editarEnlace(alias, categoria, link, oculto);
 			try {
 				response.sendRedirect("/Administrador/enlaces.jsp");
 			} catch (IOException e) {
@@ -281,7 +278,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculto == null) || (!(oculto.equals("yes")))) oculto = "no";
 			
 			gEventos evento = new gEventos();
-			evento.editarEvento(sesion, nombre, lugar, fecha, responsable, contacto, oculto);
+			evento.editarEvento(nombre, lugar, fecha, responsable, contacto, oculto);
 			try {
 				response.sendRedirect("/Administrador/eventos.jsp");
 			} catch (IOException e) {
@@ -299,7 +296,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculto == null) || (!(oculto.equals("yes")))) oculto = "no";
 			
 			gMaterial material = new gMaterial();
-			material.editarMaterial(sesion, nombre, descripcion, categoria, link, oculto);
+			material.editarMaterial(nombre, descripcion, categoria, link, oculto);
 			try {
 				response.sendRedirect("/Administrador/material.jsp");
 			} catch (IOException e) {
@@ -320,7 +317,7 @@ public class adminControlador extends HttpServlet {
 			if ((oculta == null) || (!(oculta.equals("yes")))) oculta = "no";
 			
 			gPreguntas pregunta = new gPreguntas();
-			pregunta.editarPregunta(sesion, id, preg, resp1, resp2, resp3, resp4, correcta, oculta);
+			pregunta.editarPregunta(id, preg, resp1, resp2, resp3, resp4, correcta, oculta);
 			try {
 				response.sendRedirect("/Administrador/preguntas.jsp");
 			} catch (IOException e) {

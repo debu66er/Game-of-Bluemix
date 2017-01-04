@@ -16,22 +16,16 @@ public class gEnlaces {
 	private Statement st = null;
 	private ResultSet rs = null;
 
-	public List<Enlace> getLink(String sesion) {
+	public List<Enlace> getLink() {
 		
 		List<Enlace> enlaces = new ArrayList<Enlace>();
 		
 		try {
 			con = Conexion.init();
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "ENLACESBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "ENLACESSL";
-			}
+					
 			///NO FUNCIONA EL ORDER BY CASE
-			rs = st.executeQuery("SELECT * FROM " + tabla + " ORDER BY CASE CATEGORIA WHEN 'Páginas oficiales' THEN 1 WHEN 'Documentación oficial' THEN 2 ELSE 3 END");
+			rs = st.executeQuery("SELECT * FROM ENLACESBM ORDER BY CASE CATEGORIA WHEN 'Páginas oficiales' THEN 1 WHEN 'Documentación oficial' THEN 2 ELSE 3 END");
 			String alias, categoria, link, oculto;
 			
 			while (rs.next()) {
@@ -52,7 +46,7 @@ public class gEnlaces {
 		return enlaces;
 	}
 	
-	public List<String> getCategorias(String sesion) {
+	public List<String> getCategorias() {
 		List<String> categorias = new ArrayList<String>();
 		
 		try {
@@ -72,20 +66,12 @@ public class gEnlaces {
 		return categorias;
 	}
 
-	public void editarEnlace(String sesion, String alias, String categoria, String link, String oculto) {
+	public void editarEnlace(String alias, String categoria, String link, String oculto) {
 		String query;
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "ENLACESBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "ENLACESSL";
-			}
-			
-			query = "UPDATE " + tabla + " SET ALIAS = '" + alias + "', CATEGORIA = '" + categoria + "', OCULTO = '" + oculto + "' WHERE LINK = '" + link + "'";
+			query = "UPDATE ENLACESBM SET ALIAS = '" + alias + "', CATEGORIA = '" + categoria + "', OCULTO = '" + oculto + "' WHERE LINK = '" + link + "'";
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {
@@ -93,20 +79,12 @@ public class gEnlaces {
 		}	
 	}
 
-	public void eliminarEnlace(String sesion, String link) {
+	public void eliminarEnlace(String link) {
 		String query;
 		try {
 			con = Conexion.init();
-			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "ENLACESBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "ENLACESSL";
-			}
-			
-			query = "DELETE FROM " + tabla + " WHERE LINK='" + link + "'"; 
+			st = con.createStatement();		
+			query = "DELETE FROM ENLACESBM WHERE LINK='" + link + "'"; 
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {
@@ -114,20 +92,12 @@ public class gEnlaces {
 		}
 	}
 
-	public void aniadirEnlace(String sesion, String alias, String categoria, String link, String oculto) {
+	public void aniadirEnlace(String alias, String categoria, String link, String oculto) {
 		String query;
 		try {
 			con = Conexion.init();
-			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "ENLACESBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "ENLACESSL";
-			}
-			
-			query = "INSERT INTO " + tabla + " VALUES" + "('"	+ alias + "','" + categoria + "','" + link + "','" + oculto + "')";
+			st = con.createStatement();		
+			query = "INSERT INTO ENLACESBM VALUES" + "('"	+ alias + "','" + categoria + "','" + link + "','" + oculto + "')";
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {

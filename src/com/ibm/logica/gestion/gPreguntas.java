@@ -15,22 +15,14 @@ public class gPreguntas {
 	private Statement st = null;
 	private ResultSet rs = null;
 
-	public List<Pregunta> getPregunta(String sesion) {
+	public List<Pregunta> getPregunta() {
 		
 		List<Pregunta> preguntas = new ArrayList<Pregunta>();
 		
 		try {
 			con = Conexion.init();
-			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "CUESTIONARIOBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "CUESTIONARIOSL";
-			}
-			
-			rs = st.executeQuery("SELECT * FROM " + tabla);
+			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);			
+			rs = st.executeQuery("SELECT * FROM CUESTIONARIOBM");
 			String pregunta, resp1, resp2, resp3, resp4, oculta;
 			int id, correcta;
 			
@@ -56,21 +48,14 @@ public class gPreguntas {
 		return preguntas;
 	}
 	
-	public void editarPregunta(String sesion, int id, String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String oculta) {
+	public void editarPregunta(int id, String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String oculta) {
 		String query;
 		
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
 			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "CUESTIONARIOBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "CUESTIONARIOSL";
-			}
-			
-			query = "UPDATE " + tabla + " SET PREGUNTA = '" + pregunta 
+			query = "UPDATE CUESTIONARIOBM SET PREGUNTA = '" + pregunta 
 					+ "', RESP1 = '" + resp1 
 					+ "', RESP2 = '" + resp2 
 					+ "', RESP3 = '" + resp3 
@@ -85,20 +70,12 @@ public class gPreguntas {
 		} 
 	}
 
-	public void eliminarPregunta(String sesion, int id) {
+	public void eliminarPregunta(int id) {
 		String query;
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "CUESTIONARIOBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "CUESTIONARIOSL";
-			}
-			
-			query = "DELETE FROM " + tabla + " WHERE ID='" + id + "'"; 
+			query = "DELETE FROM CUESTIONARIOBM WHERE ID='" + id + "'"; 
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {
@@ -106,20 +83,12 @@ public class gPreguntas {
 		}
 	}
 
-	public void aniadirPregunta(String sesion, String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String oculta) {
+	public void aniadirPregunta(String pregunta, String resp1, String resp2, String resp3, String resp4, int correcta, String oculta) {
 		String query;
 		try {
 			con = Conexion.init();
-			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "CUESTIONARIOBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "CUESTIONARIOSL";
-			}
-			
-			query = "INSERT INTO " + tabla + " VALUES" + "(DEFAULT, '"	+ pregunta + "','" + resp1 + "','" + resp2 + "','" + resp3 + "','" + resp4 + "','" + correcta + "','" + oculta + "')";
+			st = con.createStatement();			
+			query = "INSERT INTO CUESTIONARIOBM VALUES" + "(DEFAULT, '"	+ pregunta + "','" + resp1 + "','" + resp2 + "','" + resp3 + "','" + resp4 + "','" + correcta + "','" + oculta + "')";
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {

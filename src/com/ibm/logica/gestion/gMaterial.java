@@ -15,7 +15,7 @@ public class gMaterial {
 	private Statement st = null;
 	private ResultSet rs = null;
 
-	public List<Material> getMaterial(String sesion) {
+	public List<Material> getMaterial() {
 		
 		List<Material> material = new ArrayList<Material>();
 		
@@ -23,12 +23,7 @@ public class gMaterial {
 			con = Conexion.init();
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "MATERIALBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "MATERIALSL";
-			}
+			String tabla = "MATERIALBM";
 			
 			rs = st.executeQuery("SELECT * FROM " + tabla + " ORDER BY CATEGORIA");
 			String nombre, descripcion, categoria, link, oculto;
@@ -52,7 +47,7 @@ public class gMaterial {
 		return material;
 	}
 	
-	public List<String> getCategorias(String sesion) {
+	public List<String> getCategorias() {
 		List<String> categorias = new ArrayList<String>();
 		
 		try {
@@ -72,21 +67,13 @@ public class gMaterial {
 		return categorias;
 	}
 	
-	public void editarMaterial(String sesion, String nombre, String descripcion, String categoria, String link, String oculto) {
+	public void editarMaterial(String nombre, String descripcion, String categoria, String link, String oculto) {
 		String query;
 		
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "MATERIALBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "MATERIALSL";
-			}
-			
-			query = "UPDATE " + tabla + " SET NOMBRE = '" + nombre + "', DESCRIPCION = '" + descripcion + "', CATEGORIA = '" + categoria + "', OCULTO = '" + oculto + "' WHERE LINK = '" + link + "'";
+			query = "UPDATE MATERIALBM SET NOMBRE = '" + nombre + "', DESCRIPCION = '" + descripcion + "', CATEGORIA = '" + categoria + "', OCULTO = '" + oculto + "' WHERE LINK = '" + link + "'";
 			System.out.println(query);
 			st.executeUpdate(query);
 			con.close();
@@ -95,20 +82,12 @@ public class gMaterial {
 		} 
 	}
 
-	public void eliminarMaterial(String sesion, String link) {
+	public void eliminarMaterial(String link) {
 		String query;
 		try {
 			con = Conexion.init();
 			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "MATERIALBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "MATERIALSL";
-			}
-			
-			query = "DELETE FROM " + tabla + " WHERE LINK='" + link + "'"; 
+			query = "DELETE FROM MATERIALBM WHERE LINK='" + link + "'"; 
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {
@@ -116,20 +95,12 @@ public class gMaterial {
 		}
 	}
 
-	public void aniadirMaterial(String sesion, String nombre, String descripcion, String categoria, String link, String oculto) {
+	public void aniadirMaterial(String nombre, String descripcion, String categoria, String link, String oculto) {
 		String query;
 		try {
 			con = Conexion.init();
-			st = con.createStatement();
-			
-			String tabla = null;
-			if (sesion.equals("bluemix")) {
-				tabla = "MATERIALBM";
-			} else if (sesion.equals("softlayer")) {
-				tabla = "MATERIALSL";
-			}
-			
-			query = "INSERT INTO " + tabla + " VALUES" + "('"	+ nombre + "','" + descripcion + "','" + categoria + "','" + link + "','" + oculto + "')";
+			st = con.createStatement();			
+			query = "INSERT INTO MATERIALBM VALUES" + "('"	+ nombre + "','" + descripcion + "','" + categoria + "','" + link + "','" + oculto + "')";
 			st.executeUpdate(query);
 			con.close();
 		} catch (SQLException e) {
