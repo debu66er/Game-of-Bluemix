@@ -23,8 +23,7 @@
 			<%
 				HttpSession s = request.getSession();	
 				gPreguntas preguntas = new gPreguntas();
-				String sesion = (String) s.getAttribute("sesion");
-				List<Pregunta> pregs = preguntas.getPregunta(sesion);
+				List<Pregunta> pregs = preguntas.getPregunta();
 				Iterator<Pregunta> iter = pregs.iterator();
 				Pregunta pregunta;
 				

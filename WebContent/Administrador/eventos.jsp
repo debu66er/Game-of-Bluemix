@@ -23,9 +23,8 @@
 			<%
 				HttpSession s = request.getSession();
 				gEventos eventos = new gEventos();
-				String sesion = (String) s.getAttribute("sesion");
 				
-				List<Evento> evs = eventos.getEvento(sesion);
+				List<Evento> evs = eventos.getEvento();
 				Iterator<Evento> iter = evs.iterator();
 				Evento evento;
 

@@ -31,8 +31,7 @@
 							<% 
 								HttpSession s = request.getSession();
 								gEnlaces cat = new gEnlaces();
-								String sesion = (String) s.getAttribute("sesion");
-								List<String> categorias = cat.getCategorias(sesion);
+								List<String> categorias = cat.getCategorias();
 								Iterator<String> iter = categorias.iterator();
 								String categoria;
 	

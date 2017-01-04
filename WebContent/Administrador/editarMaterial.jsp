@@ -34,8 +34,7 @@
 							<% 
 								HttpSession s = request.getSession();
 								gMaterial cat = new gMaterial();
-								String sesion = (String) s.getAttribute("sesion");
-								List<String> categorias = cat.getCategorias(sesion);
+								List<String> categorias = cat.getCategorias();
 								Iterator<String> iter = categorias.iterator();
 								String categoria;
 	

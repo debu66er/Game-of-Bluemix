@@ -23,8 +23,7 @@
 			<%
 				HttpSession s = request.getSession();	
 				gMaterial materiales = new gMaterial();
-				String sesion = (String) s.getAttribute("sesion");
-				List<Material> mat = materiales.getMaterial(sesion);
+				List<Material> mat = materiales.getMaterial();
 				Iterator<Material> iter = mat.iterator();
 				Material material;
 				

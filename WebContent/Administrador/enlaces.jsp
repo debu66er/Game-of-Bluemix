@@ -24,8 +24,7 @@
 			<%
 				HttpSession s = request.getSession();
 				gEnlaces enlaces = new gEnlaces();
-				String sesion = (String)s.getAttribute("sesion");
-				List<Enlace> links = enlaces.getLink(sesion);
+				List<Enlace> links = enlaces.getLink();
 				Iterator<Enlace> iter = links.iterator();
 				Enlace link;
 				
