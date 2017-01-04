@@ -34,8 +34,9 @@
 				<input type="hidden" name="pagina" value="reto">
 				<%
 					HttpSession sesion=request.getSession();
+					String workshop = (String) sesion.getAttribute("workshop");
 					Lista reto = new Lista();
-					List<Pregunta> preguntas = reto.getPreguntasAleatorias(10);
+					List<Pregunta> preguntas = reto.getPreguntasAleatorias(10, workshop);
 					Iterator<Pregunta> iter = preguntas.iterator();
 					Pregunta pregunta;
 					

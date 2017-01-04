@@ -97,12 +97,13 @@ public class Lista {
 		return eventos;
 	}
 	
-	public List<Pregunta> getPreguntasAleatorias(int n) {  //n = número de preguntas que se quieren mostrar
+	public List<Pregunta> getPreguntasAleatorias(int n, String workshop) {  //n = número de preguntas que se quieren mostrar
 		List<Pregunta> preguntas = new ArrayList<Pregunta>();
 		try {
+			
 			Connection con = Conexion.init();
 			Statement st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			ResultSet rs = st.executeQuery("SELECT * FROM CUESTIONARIOBM WHERE OCULTA = 'no'");
+			ResultSet rs = st.executeQuery("SELECT * FROM CUESTIONARIOBM WHERE OCULTA = 'no' AND WORKSHOP='"+workshop+"'");
 			
 			int max;			
 			int[] num = new int[n];
