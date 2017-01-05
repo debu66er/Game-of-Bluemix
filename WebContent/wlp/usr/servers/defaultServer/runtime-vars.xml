@@ -1,0 +1,18 @@
+<server>
+  <variable name='cloud.services.Compose for MySQL.name' value='Compose for MySQL'/>
+  <variable name='cloud.services.Compose for MySQL.label' value='compose-for-mysql'/>
+  <variable name='cloud.services.Compose for MySQL.plan' value='Standard'/>
+  <variable name='cloud.services.Compose for MySQL.connection.db_type' value='mysql'/>
+  <variable name='cloud.services.Compose for MySQL.connection.name' value='bmix_dal_yp_223897bc_6d72_4dee_8dbe_28b77b878b5e'/>
+  <variable name='cloud.services.Compose for MySQL.connection.uri_cli' value='mysql -u admin -p --host bluemix-sandbox-dal-9-portal.4.dblayer.com --port 21115 --ssl-mode=REQUIRED'/>
+  <variable name='cloud.services.Compose for MySQL.connection.ca_certificate_base64' value='LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURkVENDQWwyZ0F3SUJBZ0lFV0dPRmZEQU5CZ2txaGtpRzl3MEJBUTBGQURBOE1Ub3dPQVlEVlFRRERERnYKY21SaGVFQmxjeTVwWW0wdVkyOXRMVGsyWmpkaFptVTJPREl4WkROaU56SmpOMlZqWldObFkyRm1NVEF3TnpZNApNQjRYRFRFMk1USXlPREE1TWpjeU5Gb1hEVE0yTVRJeU9EQTVNREF3TUZvd1BERTZNRGdHQTFVRUF3d3hiM0prCllYaEFaWE11YVdKdExtTnZiUzA1Tm1ZM1lXWmxOamd5TVdRellqY3lZemRsWTJWalpXTmhaakV3TURjMk9EQ0MKQVNJd0RRWUpLb1pJaHZjTkFRRUJCUUFEZ2dFUEFEQ0NBUW9DZ2dFQkFNL0FXdWJkMGdoVFJCUVQySHZqS3gxYwpVN2VxRTdwWWx6MVVWOHAwMVdtRFlmWXNEUXNWTUpmdTJhVW8vVkxncVdEU01nc25nZ25IdmhpdVRnaUtLVlY2ClpBQUNabnFvckFLSEJPT244dm01TEFwNU55eVN0ODM3VDdQdEtiMWx5ZGM4M0gzQzQ4eGRKT2N4MWhSSmtJRHcKK1UvbmwyTVAweHJGU3hjT3NGNEI4alJra1BIOWlCRGk5MGljVTVodjRhR0c3MjJJQzRWV3BxTlIrZDF0a0JNcAp6cGxSbXZJekJiMzZ5WVZ1bGNKWkh5bkhTbFc0SEJSZEpRRlg2clllOFlUU3J2UExESWthaUZ4ekdUY1lTRSsvCkN6bXkzYUdUNDg3dEFXNnRQK0xZeDNOenpuZFlsSE5MS2N0a25DM2ZsclEyamRUUWhiUmFBVFU2d0h5RVN6c0MKQXdFQUFhTi9NSDB3SFFZRFZSME9CQllFRkVTU2pGQmM4Ym5GaVNqcXVVdWNralU0cEIySk1BNEdBMVVkRHdFQgovd1FFQXdJQ0JEQWRCZ05WSFNVRUZqQVVCZ2dyQmdFRkJRY0RBUVlJS3dZQkJRVUhBd0l3REFZRFZSMFRCQVV3CkF3RUIvekFmQmdOVkhTTUVHREFXZ0JSRWtveFFYUEc1eFlrbzZybExuSkkxT0tRZGlUQU5CZ2txaGtpRzl3MEIKQVEwRkFBT0NBUUVBSzJJV3ZkMzlvQ1ZUZ2RycDdZS0RQZ3I4U0k3NnhvcTFGSVFUUFJtcllzdzl5MFdUMjY0SgoxSDJFcEhldGVVSUx5VDh4SkMzeHZxRkM5Sys5SDVxS1BEQ09kV21ianZUY0FoSDBlbWlWSmhYemtVOGVaS0VtCkszeXlYeVdVWllINzNtTEpEMnZxLzVUd3FuaGRibTBidTR3aGN1L2g1NksxTjMyWUJxRUJOeE5jSk1jMnRCYW8KVlpydmduc2poTlZTV2ZpS2JZRTFGT0src3dYWnZ2SnplcStBNU1mOFBTU3NsMzNoS1BrQXZlU2lKeFFmL2NiKwpJaUpzSDdzUDJNdi9JdUVmYUM2MFkycUY4Rmp1UTcxelEzZ2Q0NGorM3hhMjYzR1FBcFBMdnVBNFZWc3B0Z3N4CmgwL01kT3hhWlNZR0hhRjg5TXN2RmdyeExaMGtqTVB4MFE9PQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=='/>
+  <variable name='cloud.services.Compose for MySQL.connection.deployment_id' value='5863857b03138c0019000b5e'/>
+  <variable name='cloud.services.Compose for MySQL.connection.uri' value='mysql://admin:FYROQMYHMOLBKURB@bluemix-sandbox-dal-9-portal.4.dblayer.com:21115/compose'/>
+  <variable name='cloud.services.Compose for MySQL.connection.host' value='bluemix-sandbox-dal-9-portal.4.dblayer.com'/>
+  <variable name='cloud.services.Compose for MySQL.connection.port' value='21115'/>
+  <variable name='cloud.services.Compose for MySQL.connection.user' value='admin'/>
+  <variable name='cloud.services.Compose for MySQL.connection.password' value='FYROQMYHMOLBKURB'/>
+  <variable name='cloud.services.Compose for MySQL.connection.hostname' value='bluemix-sandbox-dal-9-portal.4.dblayer.com'/>
+  <variable name='cloud.services.Compose for MySQL.connection.username' value='admin'/>
+  <variable name='cloud.services.Compose for MySQL.connection.db' value='compose'/>
+</server>

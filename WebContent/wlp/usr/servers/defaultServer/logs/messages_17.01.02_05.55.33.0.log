@@ -1,0 +1,115 @@
+********************************************************************************
+product = WebSphere Application Server 16.0.0.3 (wlp-1.0.14.cl160320160831-1555)
+wlp.install.dir = /home/mluc/Desktop/wlp/
+java.home = /opt/ibm/jre
+java.version = 1.7.0
+java.runtime = Java(TM) SE Runtime Environment (pxa6470_27sr3fp10-20150708_01 (SR3 FP10))
+os = Linux (3.16.0-30-generic; amd64) (en_US)
+process = 4107@ubuntu
+********************************************************************************
+[1/2/17 5:31:53:605 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[1/2/17 5:31:53:624 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/16.0.0.3/lafiles/en.html
+[1/2/17 5:31:58:090 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 4.951 seconds
+[1/2/17 5:31:58:150 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[1/2/17 5:32:02:339 ART] 00000017 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[1/2/17 5:32:02:378 ART] 00000017 com.ibm.ws.security.registry.basic.internal.BasicRegistry    W CWWKS3103W: There are no users defined for the BasicRegistry configuration of ID com.ibm.ws.security.registry.basic.config[basic].
+[1/2/17 5:32:03:144 ART] 00000017 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[1/2/17 5:32:03:434 ART] 0000002e com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 9080.
+[1/2/17 5:32:03:513 ART] 0000002a com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0008I: The security service is ready.
+[1/2/17 5:32:03:514 ART] 0000002a com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.709 seconds.
+[1/2/17 5:32:03:582 ART] 00000017 com.ibm.ws.security.jaspi.AuthConfigFactoryWrapper           I CWWKS1655I: The default Java Authentication SPI for Containers (JASPIC) AuthConfigFactory class com.ibm.ws.security.jaspi.ProviderRegistry is being used because the Java security property authconfigprovider.factory is not set. 
+[1/2/17 5:32:04:180 ART] 00000017 .ibm.ws.org.apache.geronimo.specs.geronimo-osgi-registry.1.1 I SPI-Provider Manifest header found in bundle: com.ibm.ws.xlxp.1.5.3 Bundle:com.ibm.ws.org.apache.geronimo.specs.geronimo-osgi-registry.1.1(id=164)   
+[1/2/17 5:32:04:295 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-bindings-soap.2.6.2 (169) [org.apache.cxf.binding.soap.SoapBindingFactory, org.apache.cxf.binding.soap.SoapTransportFactory]
+[1/2/17 5:32:04:295 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-bindings-xml.2.6.2 (170) [org.apache.cxf.binding.xml.XMLBindingFactory, org.apache.cxf.binding.xml.wsdl11.XMLWSDLExtensionLoader]
+[1/2/17 5:32:04:296 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-frontend-jaxws.2.6.2 (175) [org.apache.cxf.jaxws.context.WebServiceContextResourceResolver]
+[1/2/17 5:32:04:296 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-transports-http.2.6.2 (179) [org.apache.cxf.transport.http.HTTPTransportFactory, org.apache.cxf.transport.http.HTTPWSDLExtensionLoader, org.apache.cxf.transport.http.policy.HTTPClientAssertionBuilder, org.apache.cxf.transport.http.policy.HTTPServerAssertionBuilder, org.apache.cxf.transport.http.policy.NoOpPolicyInterceptorProvider]
+[1/2/17 5:32:04:297 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-ws-addr.2.6.2 (183) [org.apache.cxf.ws.addressing.policy.AddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.UsingAddressingAssertionBuilder, org.apache.cxf.ws.addressing.policy.AddressingPolicyInterceptorProvider, org.apache.cxf.ws.addressing.impl.AddressingWSDLExtensionLoader, org.apache.cxf.ws.addressing.WSAddressingFeature$WSAddressingFeatureApplier, org.apache.cxf.ws.addressing.MAPAggregator$MAPAggregatorLoader]
+[1/2/17 5:32:04:297 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-management.2.6.2 (184) [org.apache.cxf.management.InstrumentationManager]
+[1/2/17 5:32:04:297 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.org.apache.cxf-rt-ws-policy.2.6.2 (187) [org.apache.cxf.ws.policy.PolicyEngine, org.apache.cxf.policy.PolicyDataEngine, org.apache.cxf.ws.policy.AssertionBuilderRegistry, org.apache.cxf.ws.policy.PolicyInterceptorProviderRegistry, org.apache.cxf.ws.policy.PolicyBuilder, org.apache.cxf.ws.policy.PolicyAnnotationListener, org.apache.cxf.ws.policy.attachment.ServiceModelPolicyProvider, org.apache.cxf.ws.policy.attachment.external.DomainExpressionBuilderRegistry, org.apache.cxf.ws.policy.attachment.external.EndpointReferenceDomainExpressionBuilder, org.apache.cxf.ws.policy.attachment.wsdl11.Wsdl11AttachmentPolicyProvider, org.apache.cxf.ws.policy.mtom.MTOMAssertionBuilder, org.apache.cxf.ws.policy.mtom.MTOMPolicyInterceptorProvider]
+[1/2/17 5:32:04:298 ART] 00000017 org.apache.cxf.bus.osgi.CXFActivator                         I Adding the extensions from bundle com.ibm.ws.jaxrs-2.0.common (217) [org.apache.cxf.phase.PhaseManager, org.apache.cxf.workqueue.WorkQueueManager, org.apache.cxf.buslifecycle.BusLifeCycleManager, org.apache.cxf.endpoint.ServerRegistry, org.apache.cxf.endpoint.EndpointResolverRegistry, org.apache.cxf.headers.HeaderManager, org.apache.cxf.service.factory.FactoryBeanListenerManager, org.apache.cxf.endpoint.ServerLifeCycleManager, org.apache.cxf.endpoint.ClientLifeCycleManager, org.apache.cxf.resource.ResourceManager, org.apache.cxf.catalog.OASISCatalogManager]
+[1/2/17 5:32:05:550 ART] 00000017 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0108I: JMS server has started.  
+[1/2/17 5:32:05:566 ART] 00000017 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel wasJmsEndpoint490 has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 7276.
+[1/2/17 5:32:05:850 ART] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[1/2/17 5:32:05:851 ART] 00000017 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[1/2/17 5:32:05:856 ART] 00000017 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[1/2/17 5:32:06:410 ART] 00000050 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application Game-of-Bluemix.
+[1/2/17 5:32:06:659 ART] 00000050 org.jboss.weld.Version                                       I WELD-000900: 2.3.4 (Final)
+[1/2/17 5:32:06:931 ART] 00000050 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[1/2/17 5:32:06:971 ART] 00000050 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Game of Bluemix.
+[1/2/17 5:32:06:973 ART] 00000050 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Game of Bluemix has been bound to default_host.
+[1/2/17 5:32:06:974 ART] 00000050 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/
+[1/2/17 5:32:06:988 ART] 00000050 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application Game-of-Bluemix started in 0.578 seconds.
+[1/2/17 5:32:07:128 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [mdb-3.2, localConnector-1.0, webProfile-7.0, json-1.0, appSecurity-2.0, jaxrs-2.0, jpa-2.1, jaspic-1.1, distributedMap-1.0, jaxb-2.2, jaxws-2.2, jdbc-4.1, ssl-1.0, managedBeans-1.0, jsf-2.2, appClientSupport-1.0, jacc-1.5, ejbHome-3.2, wasJmsClient-2.0, cdi-1.2, wasJmsSecurity-1.0, jaxrsClient-2.0, ejbRemote-3.2, javaMail-1.5, batch-1.0, j2eeManagement-1.1, websocket-1.1, el-3.0, ejbPersistentTimer-3.2, beanValidation-1.1, jca-1.7, wasJmsServer-1.0, servlet-3.1, ejb-3.2, jsp-2.3, jndi-1.0, jsonp-1.0, concurrent-1.0, ejbLite-3.2, jcaInboundSecurity-1.0, javaee-7.0].
+[1/2/17 5:32:07:130 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 9.041 seconds.
+[1/2/17 5:32:07:130 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[1/2/17 5:32:07:146 ART] 00000058 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/mluc/Desktop/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[1/2/17 5:32:09:545 ART] 00000075 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/
+[1/2/17 5:32:09:557 ART] 00000075 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/2/17 5:32:09:586 ART] 00000075 com.ibm.ws.jsp                                               I JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+[1/2/17 5:32:09:755 ART] 00000075 com.ibm.ws.webcontainer.webapp                               E SRVE0266E: Error occured while initializing servlets: java.lang.UnsupportedClassVersionError: JVMCFRE003 bad major version; class=com/ibm/servlets/Controlador, offset=6
+	at java.lang.ClassLoader.defineClassImpl(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:331)
+	at com.ibm.ws.classloading.internal.AppClassLoader.definePackageAndClass(AppClassLoader.java:324)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:266)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:786)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:764)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:466)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:438)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:741)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.findClass(UnifiedClassLoader.java:116)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:786)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:764)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass0(UnifiedClassLoader.java:108)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader$Delegation.loadClass(UnifiedClassLoader.java:79)
+	at com.ibm.ws.classloading.internal.UnifiedClassLoader.loadClass(UnifiedClassLoader.java:103)
+	at com.ibm.ws.classloading.internal.ThreadContextClassLoader.loadClass(ThreadContextClassLoader.java:112)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:741)
+	at java.lang.Class.forNameImpl(Native Method)
+	at java.lang.Class.forName(Class.java:309)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initializeNonDDRepresentableAnnotation(WebApp.java:1550)
+	at com.ibm.ws.webcontainer.webapp.WebApp.createServletWrappers(WebApp.java:1480)
+	at com.ibm.ws.webcontainer.webapp.WebApp.commonInitializationFinish(WebApp.java:1115)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:1035)
+	at com.ibm.ws.webcontainer.webapp.WebApp.initialize(WebApp.java:6545)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.startWebApp(DynamicVirtualHost.java:466)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.createRunnableHandler(DynamicVirtualHost.java:264)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost.createRunnableHandler(DynamicVirtualHost.java:329)
+	at com.ibm.ws.http.internal.VirtualHostImpl.discriminate(VirtualHostImpl.java:251)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:301)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:471)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:405)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:285)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:256)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:174)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:83)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:929)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1018)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1157)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:627)
+	at java.lang.Thread.run(Thread.java:809)
+
+[1/2/17 5:32:09:808 ART] 00000075 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[1/2/17 5:32:16:041 ART] 00000059 ibm.ws.transport.iiop.security.AbstractCsiv2SubsystemFactory E CWWKS9582E: The [defaultSSLConfig] sslRef attributes required by the orb element with the defaultOrb id have not been resolved within 10 seconds. As a result, the applications will not start. Ensure that you have included a keyStore element and that Secure Sockets Layer (SSL) is configured correctly. If the sslRef is defaultSSLConfig, then add a keyStore element with the id defaultKeyStore and a password.
+[1/2/17 5:43:17:098 ART] 000000a6 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[1/2/17 5:43:17:120 ART] 000000a7 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 9080.
+[1/2/17 5:43:17:127 ART] 000000a7 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/
+[1/2/17 5:43:17:129 ART] 000000a6 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is activated.
+[1/2/17 5:43:17:130 ART] 000000a6 com.ibm.jbatch.container.impl.BatchKernelImpl                I CWWKY0008I: The batch feature is using persistence type In-Memory.
+[1/2/17 5:43:17:138 ART] 000000a7 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel wasJmsEndpoint490 has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 7276.
+[1/2/17 5:43:17:144 ART] 000000a6 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  I CWWKE1101I: Server quiesce complete.
+[1/2/17 5:43:17:285 ART] 00000081 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application Game-of-Bluemix has stopped successfully.
+[1/2/17 5:43:17:802 ART] 000000a6 .jbatch.container.services.impl.MemoryPersistenceManagerImpl I CWWKY0005I: The batch In-Memory persistence service is deactivated.
+[1/2/17 5:43:17:827 ART] 000000a6 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[1/2/17 5:43:18:132 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 179
+[1/2/17 5:43:18:132 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 170
+[1/2/17 5:43:18:132 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 169
+[1/2/17 5:43:18:132 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 217
+[1/2/17 5:43:18:135 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 175
+[1/2/17 5:43:18:135 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 187
+[1/2/17 5:43:18:135 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 183
+[1/2/17 5:43:18:135 ART] 000000a6 org.apache.cxf.bus.osgi.CXFActivator                         I Removing the extensions for bundle 184
+[1/2/17 5:43:18:322 ART] 000000a6 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSIS1589I: The file store has stopped successfully.
+[1/2/17 5:43:18:450 ART] 000000a6 com.ibm.ws.sib.utils.ras.SibMessage                          I  CWSID0121I: JMS server stopped.  
+[1/2/17 5:43:18:894 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 11 minutes, 25.755 seconds.

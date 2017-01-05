@@ -1,0 +1,12 @@
+********************************************************************************
+product = WebSphere Application Server 16.0.0.3 (wlp-1.0.14.cl160320160831-1555)
+wlp.install.dir = /home/mluc/Desktop/wlp/
+java.home = /opt/ibm/jre
+java.version = 1.7.0
+java.runtime = Java(TM) SE Runtime Environment (pxa6470_27sr3fp10-20150708_01 (SR3 FP10))
+os = Linux (3.16.0-30-generic; amd64) (en_US)
+process = 121371@ubuntu
+********************************************************************************
+[1/2/17 8:39:33:485 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[1/2/17 8:39:33:512 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/16.0.0.3/lafiles/en.html
+[1/2/17 8:39:34:666 ART] 00000017 com.ibm.ws.config.xml.internal.XMLConfigParser               A CWWKG0028A: Processing included configuration resource: /home/mluc/Desktop/wlp/usr/servers/defaultServer/runtime-vars.xml

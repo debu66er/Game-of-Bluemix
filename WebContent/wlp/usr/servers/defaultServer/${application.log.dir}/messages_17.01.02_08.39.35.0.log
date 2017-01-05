@@ -1,0 +1,227 @@
+********************************************************************************
+product = WebSphere Application Server 16.0.0.3 (wlp-1.0.14.cl160320160831-1555)
+wlp.install.dir = /home/mluc/Desktop/wlp/
+java.home = /opt/ibm/jre
+java.version = 1.7.0
+java.runtime = Java(TM) SE Runtime Environment (pxa6470_27sr3fp10-20150708_01 (SR3 FP10))
+os = Linux (3.16.0-30-generic; amd64) (en_US)
+process = 110308@ubuntu
+********************************************************************************
+[1/2/17 8:21:31:449 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 1.866 seconds
+[1/2/17 8:21:31:467 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[1/2/17 8:21:32:417 ART] 00000020 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host localhost  (IPv4: 127.0.0.1) port 9081.
+[1/2/17 8:21:33:429 ART] 00000027 com.ibm.ws.app.manager.AppMessageHelper                      W CWWKZ0014W: The application Administrador could not be started as it could not be found at location Administrador.war.
+[1/2/17 8:21:33:458 ART] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application Game-of-Bluemix.
+[1/2/17 8:21:33:789 ART] 0000002b org.jboss.weld.Version                                       I WELD-000900: 2.3.4 (Final)
+[1/2/17 8:21:34:005 ART] 0000002b com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[1/2/17 8:21:34:032 ART] 0000002b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Game of Bluemix.
+[1/2/17 8:21:34:034 ART] 0000002b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Game of Bluemix has been bound to default_host.
+[1/2/17 8:21:34:035 ART] 0000002b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9081/
+[1/2/17 8:21:34:043 ART] 0000002b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application Game-of-Bluemix started in 0.585 seconds.
+[1/2/17 8:21:34:149 ART] 00000027 com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at /home/mluc/Desktop/wlp/usr/servers/defaultServer/logs/state/plugin-cfg.xml.
+[1/2/17 8:22:03:464 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [localConnector-1.0, json-1.0, jaxrs-2.0, cdi-1.2, jpa-2.1, jaxrsClient-2.0, el-3.0, websocket-1.1, beanValidation-1.1, jdbc-4.1, managedBeans-1.0, servlet-3.1, jsf-2.2, jsp-2.3, jndi-1.0, jsonp-1.0, ejbLite-3.2].
+[1/2/17 8:22:03:465 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 32.016 seconds.
+[1/2/17 8:22:03:465 ART] 0000001e com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[1/2/17 8:22:05:472 ART] 0000001e com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/
+[1/2/17 8:22:05:502 ART] 0000001e com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[1/2/17 8:22:05:684 ART] 0000001e com.ibm.ws.jsp                                               I JSPG8502I: The value of the JSP attribute jdkSourceLevel is "15".
+[1/2/17 8:24:12:656 ART] 00000040 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [Game-of-Bluemix] [/] [/material.jsp]: Initialization successful.
+[1/2/17 8:24:12:688 ART] 00000040 com.ibm.ws.jca.cm.ConnectorService                           I J2CA8050I: An authentication alias should be used instead of defining a user name and password on dataSource[compose-mysql-Compose for MySQL].
+[1/2/17 8:24:12:711 ART] 00000040 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.ClassNotFoundException: org.mariadb.jdbc.MySQLDataSource com.ibm.ws.jdbc.internal.JDBCDriverService 234" at ffdc_17.01.02_08.24.12.0.log
+[1/2/17 8:24:12:855 ART] 00000040 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.sql.SQLNonTransientException: DSRA4000E: A valid JDBC driver implementation class was not found for the jdbcDriver jdbcDriver[compose-mysql-driver] using the library compose-mysql-library. [] com.ibm.ws.jdbc.DataSourceService 587" at ffdc_17.01.02_08.24.12.1.log
+[1/2/17 8:24:12:986 ART] 00000040 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.sql.SQLNonTransientException: DSRA4000E: A valid JDBC driver implementation class was not found for the jdbcDriver jdbcDriver[compose-mysql-driver] using the library compose-mysql-library. [] com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1 122" at ffdc_17.01.02_08.24.12.2.log
+[1/2/17 8:24:13:019 ART] 00000040 SystemErr                                                    R javax.naming.NamingException: CWWKN0008E: An object could not be obtained for name jdbc/Compose for MySQL.
+[1/2/17 8:24:13:036 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:134)
+[1/2/17 8:24:13:132 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:300)
+[1/2/17 8:24:13:133 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:62)
+[1/2/17 8:24:13:134 ART] 00000040 SystemErr                                                    R 	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:161)
+[1/2/17 8:24:13:135 ART] 00000040 SystemErr                                                    R 	at javax.naming.InitialContext.lookup(InitialContext.java:423)
+[1/2/17 8:24:13:136 ART] 00000040 SystemErr                                                    R 	at com.ibm.conexion.Conexion.init(Unknown Source)
+[1/2/17 8:24:13:138 ART] 00000040 SystemErr                                                    R 	at com.ibm.logica.Lista.getMaterial(Unknown Source)
+[1/2/17 8:24:13:139 ART] 00000040 SystemErr                                                    R 	at com.ibm._jsp._material._jspService(_material.java:112)
+[1/2/17 8:24:13:139 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:101)
+[1/2/17 8:24:13:140 ART] 00000040 SystemErr                                                    R 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+[1/2/17 8:24:13:141 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1290)
+[1/2/17 8:24:13:141 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:778)
+[1/2/17 8:24:13:141 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:475)
+[1/2/17 8:24:13:142 ART] 00000040 SystemErr                                                    R 	at com.ibm.wsspi.webcontainer.servlet.GenericServletWrapper.handleRequest(GenericServletWrapper.java:119)
+[1/2/17 8:24:13:142 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:217)
+[1/2/17 8:24:13:142 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1157)
+[1/2/17 8:24:13:143 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4939)
+[1/2/17 8:24:13:144 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer31.osgi.webapp.WebApp31.handleRequest(WebApp31.java:525)
+[1/2/17 8:24:13:145 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:313)
+[1/2/17 8:24:13:149 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+[1/2/17 8:24:13:150 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:278)
+[1/2/17 8:24:13:150 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:967)
+[1/2/17 8:24:13:150 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:359)
+[1/2/17 8:24:13:151 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:318)
+[1/2/17 8:24:13:151 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:471)
+[1/2/17 8:24:13:151 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:405)
+[1/2/17 8:24:13:152 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:285)
+[1/2/17 8:24:13:152 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:256)
+[1/2/17 8:24:13:152 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:174)
+[1/2/17 8:24:13:004 ART] 00000013 LogService-126-com.ibm.ws.jdbc                               E CWWKE0701E: FrameworkEvent ERROR Bundle:com.ibm.ws.jdbc(id=126) org.osgi.framework.ServiceException: Exception in com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService()
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:222)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.getService(ServiceFactoryUse.java:111)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceConsumer$2.getService(ServiceConsumer.java:45)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:496)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceRegistry.getService(ServiceRegistry.java:461)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.getService(BundleContextImpl.java:619)
+	at com.ibm.ws.jndi.internal.WSContext$3.run(WSContext.java:515)
+	at java.security.AccessController.doPrivileged(AccessController.java:360)
+	at com.ibm.ws.jndi.internal.WSContext.getReference(WSContext.java:511)
+	at com.ibm.ws.jndi.internal.WSContext.resolveObject(WSContext.java:132)
+	at com.ibm.ws.jndi.internal.WSContext.lookup(WSContext.java:300)
+	at com.ibm.ws.jndi.WSContextBase.lookup(WSContextBase.java:62)
+	at org.apache.aries.jndi.DelegateContext.lookup(DelegateContext.java:161)
+	at javax.naming.InitialContext.lookup(InitialContext.java:423)
+	at com.ibm.conexion.Conexion.init(Unknown Source)
+	at com.ibm.logica.Lista.getMaterial(Unknown Source)
+	at com.ibm._jsp._material._jspService(_material.java:112)
+	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1290)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:778)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:475)
+	at com.ibm.wsspi.webcontainer.servlet.GenericServletWrapper.handleRequest(GenericServletWrapper.java:119)
+	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:217)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1157)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4939)
+	at com.ibm.ws.webcontainer31.osgi.webapp.WebApp31.handleRequest(WebApp31.java:525)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:313)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:278)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:967)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:359)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:318)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:471)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:405)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:285)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:256)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:174)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:83)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:929)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1018)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1157)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:627)
+	at java.lang.Thread.run(Thread.java:809)
+Caused by: java.lang.RuntimeException: java.sql.SQLNonTransientException: DSRA4000E: A valid JDBC driver implementation class was not found for the jdbcDriver jdbcDriver[compose-mysql-driver] using the library compose-mysql-library. []
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:123)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse$1.run(ServiceFactoryUse.java:212)
+	at java.security.AccessController.doPrivileged(AccessController.java:360)
+	at org.eclipse.osgi.internal.serviceregistry.ServiceFactoryUse.factoryGetService(ServiceFactoryUse.java:210)
+	... 45 more
+Caused by: java.sql.SQLNonTransientException: DSRA4000E: A valid JDBC driver implementation class was not found for the jdbcDriver jdbcDriver[compose-mysql-driver] using the library compose-mysql-library. []
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.classNotFound(JDBCDriverService.java:196)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:298)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.createConnectionPoolDataSource(JDBCDriverService.java:446)
+	at com.ibm.ws.jdbc.DataSourceService.init(DataSourceService.java:460)
+	at com.ibm.ws.jca.cm.AbstractConnectionFactoryService.createResource(AbstractConnectionFactoryService.java:138)
+	at com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1.getService(ResourceFactoryTrackerData.java:121)
+	... 48 more
+Caused by: java.lang.ClassNotFoundException: org.mariadb.jdbc.MySQLDataSource
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:488)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:271)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:786)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:764)
+	at com.ibm.ws.classloading.internal.AppClassLoader.findOrDelegateLoadClass(AppClassLoader.java:466)
+	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:438)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:741)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:234)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService$1.run(JDBCDriverService.java:224)
+	at java.security.AccessController.doPrivileged(AccessController.java:416)
+	at com.ibm.ws.jdbc.internal.JDBCDriverService.create(JDBCDriverService.java:223)
+	... 52 more
+ Event:org.osgi.framework.FrameworkEvent[source=com.ibm.ws.jdbc_1.0.14.cl160320160831-1555 [126]] 
+[1/2/17 8:24:13:152 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:83)
+[1/2/17 8:24:13:158 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+[1/2/17 8:24:13:158 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+[1/2/17 8:24:13:158 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:929)
+[1/2/17 8:24:13:159 ART] 00000040 SystemErr                                                    R 	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1018)
+[1/2/17 8:24:13:159 ART] 00000040 SystemErr                                                    R 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1157)
+[1/2/17 8:24:13:159 ART] 00000040 SystemErr                                                    R 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:627)
+[1/2/17 8:24:13:159 ART] 00000040 SystemErr                                                    R 	at java.lang.Thread.run(Thread.java:809)
+[1/2/17 8:24:13:162 ART] 00000040 com.ibm.ws.webcontainer.util.ApplicationErrorUtils           E SRVE0777E: Exception thrown by application class 'com.ibm.logica.Lista.getMaterial:-1'
+java.lang.NullPointerException
+	at com.ibm.logica.Lista.getMaterial(Unknown Source)
+	at com.ibm._jsp._material._jspService(_material.java:112)
+	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1290)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:778)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:475)
+	at com.ibm.wsspi.webcontainer.servlet.GenericServletWrapper.handleRequest(GenericServletWrapper.java:119)
+	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:217)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1157)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4939)
+	at com.ibm.ws.webcontainer31.osgi.webapp.WebApp31.handleRequest(WebApp31.java:525)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:313)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:278)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:967)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:359)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:318)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:471)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:405)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:285)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:256)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:174)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:83)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:929)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1018)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1157)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:627)
+	at java.lang.Thread.run(Thread.java:809)
+
+[1/2/17 8:24:13:277 ART] 00000040 com.ibm.ws.logging.internal.impl.IncidentImpl                I FFDC1015I: An FFDC Incident has been created: "java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105" at ffdc_17.01.02_08.24.13.0.log
+[1/2/17 8:24:13:282 ART] 00000040 com.ibm.ws.webcontainer.webapp                               E SRVE0315E: An exception occurred: java.lang.Throwable: java.lang.NullPointerException
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4983)
+	at com.ibm.ws.webcontainer31.osgi.webapp.WebApp31.handleRequest(WebApp31.java:525)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:313)
+	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:1007)
+	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:278)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:967)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.wrapHandlerAndExecute(HttpDispatcherLink.java:359)
+	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink.ready(HttpDispatcherLink.java:318)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleDiscrimination(HttpInboundLink.java:471)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.handleNewRequest(HttpInboundLink.java:405)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.processRequest(HttpInboundLink.java:285)
+	at com.ibm.ws.http.channel.internal.inbound.HttpInboundLink.ready(HttpInboundLink.java:256)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.sendToDiscriminators(NewConnectionInitialReadCallback.java:174)
+	at com.ibm.ws.tcpchannel.internal.NewConnectionInitialReadCallback.complete(NewConnectionInitialReadCallback.java:83)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.requestComplete(WorkQueueManager.java:504)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.attemptIO(WorkQueueManager.java:574)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager.workerRun(WorkQueueManager.java:929)
+	at com.ibm.ws.tcpchannel.internal.WorkQueueManager$Worker.run(WorkQueueManager.java:1018)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1157)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:627)
+	at java.lang.Thread.run(Thread.java:809)
+Caused by: java.lang.NullPointerException
+	at com.ibm.logica.Lista.getMaterial(Unknown Source)
+	at com.ibm._jsp._material._jspService(_material.java:112)
+	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:101)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1290)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:778)
+	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:475)
+	at com.ibm.wsspi.webcontainer.servlet.GenericServletWrapper.handleRequest(GenericServletWrapper.java:119)
+	at com.ibm.ws.jsp.webcontainerext.AbstractJSPExtensionServletWrapper.handleRequest(AbstractJSPExtensionServletWrapper.java:217)
+	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1157)
+	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4939)
+	... 20 more
+
+[1/2/17 8:24:13:341 ART] 0000005b com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /banner-background.png
+[1/2/17 8:24:13:345 ART] 0000005a com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /Websphere_Brandmark_18x120.png
+[1/2/17 8:24:13:340 ART] 00000054 com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /banner-swoosh.png
+[1/2/17 8:30:46:813 ART] 00000015 com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Monday, January 2, 2017 at 8:30 AM. The server defaultServer is shutting down.
+[1/2/17 8:30:46:825 ART] 000000e6 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[1/2/17 8:30:46:843 ART] 000000e8 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host localhost  (IPv4: 127.0.0.1) port 9081.
+[1/2/17 8:30:46:844 ART] 000000e8 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9081/
+[1/2/17 8:30:56:318 ART] 00000014 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: The server defaultServer is stopping because the JVM is exiting.
+[1/2/17 8:31:16:838 ART] 000000e6 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  W CWWKE1102W: The quiesce operation did not complete. The server will now stop.
+[1/2/17 8:31:16:900 ART] 000000e1 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application Game-of-Bluemix has stopped successfully.
+[1/2/17 8:31:17:713 ART] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 9 minutes, 48.13 seconds.

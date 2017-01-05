@@ -1,0 +1,12 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1      1/2/17 8:39:41:634 ART      1/2/17 8:39:41:634 ART java.lang.ClassNotFoundException com.ibm.ws.jdbc.internal.JDBCDriverService 234
+                                                                            - /home/mluc/Desktop/wlp/usr/servers/defaultServer/${application.log.dir}/ffdc/ffdc_17.01.02_08.39.41.0.log
+     1      1      1/2/17 8:39:41:658 ART      1/2/17 8:39:41:658 ART java.sql.SQLNonTransientException com.ibm.ws.jdbc.DataSourceService 587
+                                                                            - /home/mluc/Desktop/wlp/usr/servers/defaultServer/${application.log.dir}/ffdc/ffdc_17.01.02_08.39.41.1.log
+     2      1      1/2/17 8:39:41:737 ART      1/2/17 8:39:41:737 ART java.sql.SQLNonTransientException com.ibm.ws.resource.internal.ResourceFactoryTrackerData$1 122
+                                                                            - /home/mluc/Desktop/wlp/usr/servers/defaultServer/${application.log.dir}/ffdc/ffdc_17.01.02_08.39.41.2.log
+     3      1      1/2/17 8:39:41:975 ART      1/2/17 8:39:41:975 ART java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - /home/mluc/Desktop/wlp/usr/servers/defaultServer/${application.log.dir}/ffdc/ffdc_17.01.02_08.39.41.3.log
+------+------+---------------------------+---------------------------+---------------------------
