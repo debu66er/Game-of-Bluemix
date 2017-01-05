@@ -1,6 +1,0 @@
-
- Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
-------+------+---------------------------+---------------------------+---------------------------
-     0      1    12/30/16 6:35:34:172 ART    12/30/16 6:35:34:172 ART java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
-                                                                            - /home/mluc/Desktop/wlp/usr/servers/defaultServer/logs/ffdc/ffdc_16.12.30_06.35.34.0.log
-------+------+---------------------------+---------------------------+---------------------------
