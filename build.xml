@@ -19,9 +19,11 @@
 	</target>
 
 	<target name="package">
-		<war destfile="${basedir}/GameOfBluemix.war" manifest="${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
+		<war destfile="${basedir}/GameOfBluemix.war" manifest=
+		"${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/classes/**" />
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
+			<fileset dir="${basedir}/WebContent" includes="META-INF/**" />
 			<fileset dir="${basedir}/WebContent" includes="images/**" />
 			<fileset dir="${basedir}/WebContent" includes="fonts/**" />
 			<fileset dir="${basedir}/WebContent" includes="Administrador/**" />
