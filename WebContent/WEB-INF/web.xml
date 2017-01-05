@@ -9,4 +9,23 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	<security-constraint>
+		<display-name>GoB Administrator</display-name>
+		<web-resource-collection>
+		  <web-resource-name>myapp</web-resource-name>
+		  <url-pattern>/</url-pattern>
+		  <url-pattern>/*</url-pattern>
+		  <url-pattern>/Administrador/*</url-pattern>
+		  <http-method>GET</http-method>
+		  <http-method>PUT</http-method>
+		  <http-method>HEAD</http-method>
+		  <http-method>TRACE</http-method>
+		  <http-method>POST</http-method>
+		  <http-method>DELETE</http-method>
+		  <http-method>OPTIONS</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+		  <role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
 </web-app>
