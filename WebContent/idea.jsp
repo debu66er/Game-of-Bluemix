@@ -1,7 +1,7 @@
 <%@page language="java"%>
 
 <!DOCTYPE html>
-
+<%@ page contentType="text/html; charset=UTF-8"%>
 <html lang="es">
 	<head>
 		<title>Game of Bluemix - Idea</title>
