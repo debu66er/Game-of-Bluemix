@@ -46,7 +46,7 @@
 					</tr>
 					<tr>
 						<td class="form">*Teléfono: </td>
-						<td class="form"><input type="tel" name="telefono" size=60 maxlength=12 required oninvalid="setCustomValidity('Por favor, complete su telï¿½fono')" oninput="setCustomValidity('')"/></td>
+						<td class="form"><input type="tel" name="telefono" size=60 maxlength=12 required oninvalid="setCustomValidity('Por favor, complete su teléfono')" oninput="setCustomValidity('')"/></td>
 					</tr>
 					
 				</table>
