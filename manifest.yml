@@ -1,6 +1,6 @@
 ---
 applications:
-- name: GameOfBluemix
+- name: Game Of Bluemix
   host: gameofbluemix
   domain: mybluemix.net
   instances: 1
