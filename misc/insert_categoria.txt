@@ -1,0 +1,6 @@
+INSERT INTO CATEGORIA VALUES('Laboratorios','Material');
+INSERT INTO CATEGORIA VALUES('Otros','Material');
+INSERT INTO CATEGORIA VALUES('Presentaciones','Material');
+INSERT INTO CATEGORIA VALUES('Documentación oficial','Enlaces');
+INSERT INTO CATEGORIA VALUES('Otros','Enlaces');
+INSERT INTO CATEGORIA VALUES('Páginas oficiales','Enlaces');
