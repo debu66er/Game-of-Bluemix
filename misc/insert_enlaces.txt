@@ -1,0 +1,6 @@
+INSERT INTO ENLACESBM (ALIAS,CATEGORIA,LINK,OCULTO)
+VALUES ('Documentación oficial de Bluemix', 'Documentación oficial', 'https://console.ng.bluemix.net/docs/', 'no'),
+('Blog oficial de Bluemix', 'Documentación oficial', 'https://www.ibm.com/blogs/bluemix/', 'no'),
+('Meetup de Bluemix (Madrid)', 'Otros', 'https://www.meetup.com/Madrid-Bluemix-Meetup/', 'no'),
+('Meetup de Bluemix (Barcelona)', 'Otros', 'https://www.meetup.com/Bluemix-Barcelona/', 'no'),
+('Bluemix', 'Páginas oficiales', 'https://console.ng.bluemix.net', 'no');
