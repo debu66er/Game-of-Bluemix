@@ -1,0 +1,2 @@
+INSERT INTO MATERIALBM (NOMBRE,DESCRIPCION,CATEGORIA,LINK,OCULTO)
+VALUES ('Material', 'En esta carpeta compartida en Box encontraréis el material del workshop', 'Carpeta compartida', 'https://ibm.box.com/s/vb7pop7wcm3s3mmf8ryw7kjcrz5dyp2g', 'no');
