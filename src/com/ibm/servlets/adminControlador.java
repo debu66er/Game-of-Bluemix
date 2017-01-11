@@ -17,6 +17,7 @@ import com.ibm.logica.gestion.gEnlaces;
 import com.ibm.logica.gestion.gEventos;
 import com.ibm.logica.gestion.gMaterial;
 import com.ibm.logica.gestion.gPreguntas;
+import com.ibm.logica.gestion.gUsers;
 import com.ibm.logica.modelo.Encuesta;
 
 @WebServlet({"/admin", "/index", "/gestion", "/aniadir", "/editar", "/descargarCSV"})
@@ -28,11 +29,12 @@ public class adminControlador extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
 		String pagina = request.getParameter("pagina");
+		gUsers gusers = new gUsers();
 
 		if (pagina.equals("index")) {
 			try {
 				//pendiente añadir servicio SSO
-				if (request.getParameter("pass").equals("pass1234")) 
+				if (gusers.authenticate(request.getParameter("user"), request.getParameter("pass"))) 
 				request.getRequestDispatcher("/Administrador/elegir.jsp").forward(request, response);
 			} catch (ServletException e) {
 				e.printStackTrace();
