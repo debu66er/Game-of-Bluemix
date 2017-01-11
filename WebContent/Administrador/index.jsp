@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-
+<%@ page contentType="text/html; charset=UTF-8"%>
 <html lang="es">
+
 	<head>
 		<title>Administración Bluemix</title>
 		<meta charset="UTF-8">
@@ -22,6 +23,9 @@
 		<h1>Portal de administración</h1><br><br>
 		<form action="/index" method="POST">
 			<input type="hidden" name="pagina" value="index">
+			<%String error = (String) request.getSession().getAttribute("errorMsg");
+        	if (error!=null && error!="") out.println(error);%>
+        	<br>
 			<label for="user">Usuario: </label><input type="text" name="user" required><br><br>
 			<label for="pass">Contraseña: </label><input type="password" name="pass" required><br><br>
 			<!-- Aquí habría que autenticarlo con el signle sign on... De momento dejo pasar con mi pass -->

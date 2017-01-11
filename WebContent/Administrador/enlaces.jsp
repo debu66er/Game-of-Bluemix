@@ -21,7 +21,7 @@
 	<div class="banner">
 		<a class="enlace" href="http://gameofbluemix.mybluemix.net/"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Game of Bluemix </a>
 		<div class="admin">
-			<a class="enlace" href="/Administrador/index.html"> Administrador </a>
+			<a class="enlace" href="/Administrador/index.jsp"> Administrador </a>
 		</div>
 	</div>
 	

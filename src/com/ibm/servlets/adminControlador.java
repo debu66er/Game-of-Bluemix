@@ -10,6 +10,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.ibm.logica.estadisticas.Consultas;
 import com.ibm.logica.gestion.gCategorias;
@@ -29,13 +30,28 @@ public class adminControlador extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 
 		String pagina = request.getParameter("pagina");
-		gUsers gusers = new gUsers();
+        HttpSession session = request.getSession(true); 
+
 
 		if (pagina.equals("index")) {
+			gUsers gusers = new gUsers();
+	        String strErrMsg = "";
+			session.setAttribute("errorMsg", strErrMsg);
+			boolean auth=false;
+
 			try {
+				auth = gusers.authenticate(request.getParameter("user"), request.getParameter("pass"));
 				//pendiente añadir servicio SSO
-				if (gusers.authenticate(request.getParameter("user"), request.getParameter("pass"))) 
-				request.getRequestDispatcher("/Administrador/elegir.jsp").forward(request, response);
+				if (auth){
+					session.setAttribute("errorMsg", "");
+					request.getRequestDispatcher("/Administrador/elegir.jsp").forward(request, response);
+				}
+				else{
+					session.setAttribute("errorMsg", "Wrong username or password.");
+					request.getRequestDispatcher("/Administrador/index.jsp").forward(request, response);
+				}
+				
+				
 			} catch (ServletException e) {
 				e.printStackTrace();
 			} catch (IOException e) {

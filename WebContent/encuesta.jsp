@@ -16,7 +16,7 @@
 	<body>
 		<div class="banner">
 			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Game of Bluemix </a>
-			<div class="admin"><a class="enlace" href="/Administrador/index.html" target="_blank">Administrador</a></div>
+			<div class="admin"><a class="enlace" href="/Administrador/index.jsp" target="_blank">Administrador</a></div>
 			<div class="menu">
 				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
 				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
