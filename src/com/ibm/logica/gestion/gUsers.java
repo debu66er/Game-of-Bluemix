@@ -27,7 +27,7 @@ public class gUsers {
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 			rs = st.executeQuery("SELECT * FROM USERS WHERE LOGIN='"+login+"'");
 			
-			while (rs.next()) {
+			if (rs.next()) { //check if the rs is empty
 				
 				pwd = rs.getString("pass");
 				
