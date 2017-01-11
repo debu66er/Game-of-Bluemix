@@ -18,13 +18,14 @@ public class gUsers {
 	public boolean authenticate(String login, String password) {
 		
 		boolean auth = false;
+		String pwd = null;
+
 
 		
 		try {
 			con = Conexion.init();
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
-			rs = st.executeQuery("SELECT PASS FROM USERS WHERE LOGIN='"+login+"'");
-			String pwd = null;
+			rs = st.executeQuery("SELECT * FROM USERS WHERE LOGIN='"+login+"'");
 			
 			while (rs.next()) {
 				
