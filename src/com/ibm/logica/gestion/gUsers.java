@@ -34,7 +34,7 @@ public class gUsers {
 
 			}
 			
-			if (pwd.equals(password)){
+			if (pwd!=null && pwd.equals(password)){
 				
 				auth=true;
 			}
