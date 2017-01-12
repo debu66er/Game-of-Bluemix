@@ -43,6 +43,7 @@
 			<table>
 				<tr>
 					<th scope="col">Evento</th>
+					<th scope="col">Ciudad</th>
 					<th scope="col">Fecha</th>
 					<th scope="col">Nombre y apellidos</th>
 					<th scope="col">Empresa</th>
@@ -68,6 +69,7 @@
 				%>
 						<tr>
 							<td><%= encuesta.getEvento() %></td>
+							<td><%= encuesta.getCiudad() %></td>
 							<td><%= encuesta.getFecha() %></td>
 							<td><%= encuesta.getNombre() %></td>
 							<td><%= encuesta.getEmpresa() %></td>

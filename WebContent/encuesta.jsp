@@ -56,7 +56,7 @@
 				<table class=form>
 					<tr class="par">
 						<td>Game of Bluemix: Essentials</td>
-						<td class="input"><input type="radio" name="evento" value="essential"></td>
+						<td class="input"><input type="radio" name="evento" value="essentials"></td>
 					</tr>
 					<tr class="impar">
 						<td>Game of Bluemix: Experienced - CloudFoundry & Openwhisk</td>

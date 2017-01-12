@@ -38,13 +38,14 @@ public class Consultas {
 			
 			rs = st.executeQuery("SELECT * FROM ENCUESTA");
 			
-			String evento, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto;
+			String evento, ciudad, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto;
 			int vevento, vinstructor, vorganizacion, vagenda, vpresentaciones, vlaboratorios, cantes, cdespues;
 			
 			DateFormat form = new SimpleDateFormat("dd.MM.yyyy");
 					
 			while (rs.next()) {
 				evento = rs.getString("evento");
+				ciudad = rs.getString("ciudad");
 				fecha = form.format(rs.getDate("instante"));
 				nombre = rs.getString("nombre");
 				empresa = rs.getString("empresa");
@@ -63,7 +64,7 @@ public class Consultas {
 				sugerencias = rs.getString("sugerencias");
 				contacto = rs.getString("contacto");
 				
-				Encuesta usuario = new Encuesta(evento, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto, vevento, vinstructor, vorganizacion, vagenda, vpresentaciones, vlaboratorios, cantes, cdespues);
+				Encuesta usuario = new Encuesta(evento, ciudad, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto, vevento, vinstructor, vorganizacion, vagenda, vpresentaciones, vlaboratorios, cantes, cdespues);
 				
 				usuarios.add(usuario);
 			}
@@ -84,6 +85,7 @@ public class Consultas {
             CsvWriter csv = new CsvWriter(archivo.getPath(), ';', StandardCharsets.ISO_8859_1);
             
             csv.write("Evento");
+            csv.write("Ciudad");
             csv.write("Fecha");
             csv.write("Nombre y apellidos");
             csv.write("Empresa");
@@ -107,6 +109,7 @@ public class Consultas {
                 usr = iter.next();
                 
                 csv.write(usr.getEvento());
+                csv.write(usr.getCiudad());
                 csv.write(usr.getFecha());
                 csv.write(usr.getNombre());
                 csv.write(usr.getEmpresa());

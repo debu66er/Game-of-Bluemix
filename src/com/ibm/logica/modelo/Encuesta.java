@@ -1,13 +1,14 @@
 package com.ibm.logica.modelo;
 
 public class Encuesta {
-	private String evento, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto;
+	private String evento, ciudad, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto;
 	private int vevento, vinstructor, vorganizacion, vagenda, vpresentaciones, vlaboratorios, cantes, cdespues;
 	
-	public Encuesta(String evento, String fecha, String nombre, String empresa, String email, String telefono,
+	public Encuesta(String evento, String ciudad, String fecha, String nombre, String empresa, String email, String telefono,
 			String mejor, String peor, String sugerencias, String contacto, int vevento, int vinstructor,
 			int vorganizacion, int vagenda, int vpresentaciones, int vlaboratorios, int cantes, int cdespues) {
 		this.evento = evento;
+		this.evento = ciudad;
 		this.fecha = fecha;
 		this.nombre = nombre;
 		this.empresa = empresa;
@@ -169,5 +170,13 @@ public class Encuesta {
 
 	public void setCdespues(int cdespues) {
 		this.cdespues = cdespues;
+	}
+
+	public String getCiudad() {
+		return ciudad;
+	}
+
+	public void setCiudad(String ciudad) {
+		this.ciudad = ciudad;
 	}	
 }
