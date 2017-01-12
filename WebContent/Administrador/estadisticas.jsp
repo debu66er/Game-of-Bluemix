@@ -40,9 +40,9 @@
 				List<Encuesta> enc = encuestas.getDatos();
 				s.setAttribute("encuestas", enc);
 				Iterator<Encuesta> iter = enc.iterator();
-				Encuesta encuesta;				
+				Encuesta encuesta;	
+				out.println(encuesta.getCiudad());
 			%>
-			<%= encuesta.getCiudad() %>
 			<table>
 				<tr>
 					<th scope="col">Evento</th>
