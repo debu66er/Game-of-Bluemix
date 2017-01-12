@@ -65,7 +65,8 @@ public class Consultas {
 				contacto = rs.getString("contacto");
 				
 				Encuesta usuario = new Encuesta(evento, ciudad, fecha, nombre, empresa, email, telefono, mejor, peor, sugerencias, contacto, vevento, vinstructor, vorganizacion, vagenda, vpresentaciones, vlaboratorios, cantes, cdespues);
-				
+				System.out.println(evento);
+				System.out.println(ciudad);			
 				usuarios.add(usuario);
 			}
 			

@@ -31,6 +31,8 @@
 		
 		<div class="cuerpo">
 			<h1>Estadísticas</h1>
+
+			
 			<%	
 				HttpSession s = request.getSession();
 				Consultas encuestas = new Consultas();
@@ -40,6 +42,7 @@
 				Iterator<Encuesta> iter = enc.iterator();
 				Encuesta encuesta;				
 			%>
+			<%= encuesta.getCiudad() %>
 			<table>
 				<tr>
 					<th scope="col">Evento</th>
