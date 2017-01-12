@@ -8,7 +8,7 @@ public class Encuesta {
 			String mejor, String peor, String sugerencias, String contacto, int vevento, int vinstructor,
 			int vorganizacion, int vagenda, int vpresentaciones, int vlaboratorios, int cantes, int cdespues) {
 		this.evento = evento;
-		this.evento = ciudad;
+		this.ciudad = ciudad;
 		this.fecha = fecha;
 		this.nombre = nombre;
 		this.empresa = empresa;
