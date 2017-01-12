@@ -67,9 +67,6 @@
 				<%						
 					while (iter.hasNext()) {
 						encuesta = iter.next();
-						out.println(encuesta.getCiudad());
-
-						
 				%>
 						<tr>
 							<td><%= encuesta.getEvento() %></td>
