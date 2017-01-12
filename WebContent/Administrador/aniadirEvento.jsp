@@ -24,6 +24,11 @@
 	</div>
 	
 	<body>
+		<% String user =(String) request.getSession().getAttribute("userName");
+	    if (user==null){
+	       RequestDispatcher rs = request.getServletContext().getRequestDispatcher("/Administrador/index.jsp"); 
+	        rs.forward(request, response);
+   		 }%>
 		<div class="cuerpo">
 			<form action="/aniadir" method="post">
 				<input type="hidden" name="pagina" value="aniadirEvento">

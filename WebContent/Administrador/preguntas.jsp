@@ -25,6 +25,11 @@
 	</div>
 	
 	<body>
+		<% String user =(String) request.getSession().getAttribute("userName");
+	    if (user==null){
+	       RequestDispatcher rs = request.getServletContext().getRequestDispatcher("/Administrador/index.jsp"); 
+	        rs.forward(request, response);
+   		 }%>
 		<div class="cuerpo">
 			<h1> Gestión de preguntas </h1>
 			<%

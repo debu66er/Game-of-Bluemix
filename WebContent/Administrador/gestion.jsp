@@ -16,6 +16,11 @@
 			HttpSession s = request.getSession();
 			//s.setAttribute("sesion", request.getParameter("sesion"));
 		%>
+		<% String user =(String) request.getSession().getAttribute("userName");
+	    if (user==null){
+	       RequestDispatcher rs = request.getServletContext().getRequestDispatcher("/Administrador/index.jsp"); 
+	        rs.forward(request, response);
+   		 }%>
 	
 		<div class="banner">
 			<a class="enlace" href="http://gameofbluemix.mybluemix.net/"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Game of Bluemix </a>

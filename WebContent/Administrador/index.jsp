@@ -20,6 +20,11 @@
 	</div>
 	
 	<body class="cuerpo">
+		<% String user =(String) request.getSession().getAttribute("userName");
+	    if (user!=null){
+	       RequestDispatcher rs = request.getServletContext().getRequestDispatcher("/Administrador/elegir.jsp"); 
+	        rs.forward(request, response);
+   		 }%>
 		<h1>Portal de administración</h1><br><br>
 		<form action="/index" method="POST">
 			<input type="hidden" name="pagina" value="index">

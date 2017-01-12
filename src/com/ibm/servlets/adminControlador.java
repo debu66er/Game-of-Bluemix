@@ -36,14 +36,16 @@ public class adminControlador extends HttpServlet {
 		if (pagina.equals("index")) {
 			gUsers gusers = new gUsers();
 	        String strErrMsg = "";
+	        String strUserName=request.getParameter("user");
 			session.setAttribute("errorMsg", strErrMsg);
 			boolean auth=false;
 
 			try {
-				auth = gusers.authenticate(request.getParameter("user"), request.getParameter("pass"));
+				auth = gusers.authenticate(strUserName, request.getParameter("pass"));
 				//pendiente añadir servicio SSO
 				if (auth){
 					session.setAttribute("errorMsg", "");
+				    session.setAttribute("userName",strUserName); 
 					request.getRequestDispatcher("/Administrador/elegir.jsp").forward(request, response);
 				}
 				else{
