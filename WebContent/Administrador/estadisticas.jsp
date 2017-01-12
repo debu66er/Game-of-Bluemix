@@ -41,7 +41,6 @@
 				s.setAttribute("encuestas", enc);
 				Iterator<Encuesta> iter = enc.iterator();
 				Encuesta encuesta;	
-				out.println(encuesta.getCiudad());
 			%>
 			<table>
 				<tr>
@@ -68,6 +67,8 @@
 				<%						
 					while (iter.hasNext()) {
 						encuesta = iter.next();
+						out.println(encuesta.getCiudad());
+
 						
 				%>
 						<tr>
