@@ -27,7 +27,6 @@
 			<fileset dir="${basedir}/WebContent" includes="images/**" />
 			<fileset dir="${basedir}/WebContent" includes="fonts/**" />
 			<fileset dir="${basedir}/WebContent" includes="Administrador/**" />
-			<fileset dir="${basedir}/WebContent" includes="documents/**" />
 			<fileset dir="${basedir}/WebContent" includes="*.html" />
 			<fileset dir="${basedir}/WebContent" includes="*.jsp" />
 			<fileset dir="${basedir}/WebContent" includes="*.css" />
