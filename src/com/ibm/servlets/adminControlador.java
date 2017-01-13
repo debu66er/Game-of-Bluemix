@@ -67,7 +67,7 @@ public class adminControlador extends HttpServlet {
 	        try {
 	        	Consultas consulta = new Consultas();
 	        	String path = request.getSession().getServletContext().getRealPath("/");
-	        	String url = path.substring(0, path.lastIndexOf("/")) + "/documents/prueba.csv";
+	        	String url = path.substring(0, path.lastIndexOf("/")) + "/prueba.csv";
 	        	List<Encuesta> usuarios = (List<Encuesta>) request.getSession().getAttribute("encuestas");
 	        	File archivo = new File (url);
 	        	ServletOutputStream out = response.getOutputStream();
