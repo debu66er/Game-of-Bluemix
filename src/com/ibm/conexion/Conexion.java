@@ -16,7 +16,7 @@ public class Conexion {
 
 		try {
 			Context initialContext = new InitialContext();
-			datasource = (DataSource)initialContext.lookup("jdbc/PostgreSQL");  
+			datasource = (DataSource)initialContext.lookup("jdbc/Compose for PostgreSQL-2q");  
 			con = datasource.getConnection();
 		}
 		catch (NamingException e) {
