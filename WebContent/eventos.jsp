@@ -38,7 +38,17 @@
 				while (iter.hasNext()) {
 					evento = iter.next();
 			%>
-					<p align="center"><%= evento.getNombre() %> | <%= evento.getLugar() %> | <%= evento.getFecha() %>  -  Responsable: <%= evento.getResponsable() %> | <%= evento.getContacto() %></p>
+				<table>
+				<tr>
+					<th scope="col">Evento</th>
+					<th scope="col">Ciudad</th>
+					<th scope="col">Fecha</th>
+				</tr>
+				<tr>
+					<td><%= evento.getNombre()%></td>
+					<td><%= evento.getLugar() %></td>
+					<td><%= evento.getFecha()%></td>
+				</tr>
 			<%
 				}
 			%>
