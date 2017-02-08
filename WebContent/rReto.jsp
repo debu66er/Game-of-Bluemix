@@ -33,7 +33,7 @@
 			<br><br>
 			<% if ((Boolean)request.getAttribute("linkedin")==true){  %>
 			<h3>¡Comparte tu resultado en LinkedIn!</h3>
-			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a>
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./images/linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a>
 			<br>
 			<br>		
 			
