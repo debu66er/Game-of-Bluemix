@@ -13,6 +13,7 @@
 		<meta name="author" content="Noelia Herranz">
 		<meta name="application-name" content="Martes de Bluemix">
 		<meta name="keywords" content="IBM, Bluemix, Martes, Cloud">
+		<meta name="description" content="He superado el reto de Bluemix!">
 		<link rel="stylesheet" href="./bluemix.css" type="text/css" media="all" />
 		<link rel="icon" type="image/png" href="images/favicon.png">
 	</head>
@@ -30,8 +31,15 @@
 		<div class="cuerpo">
 			<h1><%= (String)request.getAttribute("titulo") %></h1>
 			<br><br>
+			<% if ((Boolean)request.getAttribute("linkedin")==true){  %>
+			<h3>¡Comparte tu resultado en LinkedIn!</h3>
+			<script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+			<script type="IN/Share" data-url="http://gameofbluemix.mybluemix.net/" data-counter="top"></script>
+			<br>
+			<br>		
 			
-			<%
+			
+			<% } 
 			
 				HttpSession sesion=request.getSession();
 				@SuppressWarnings("unchecked")
