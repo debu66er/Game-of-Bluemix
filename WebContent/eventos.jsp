@@ -29,11 +29,11 @@
 
 		<div class="cuerpo">
 			<h1> Próximos eventos </h1><br><br>
-			<table align="center">
+			<table cellpadding="10px" align="center">
 			<tr>
-				<th scope="col">Evento</th>
-				<th scope="col">Ciudad</th>
 				<th scope="col">Fecha</th>
+				<th scope="col">Lugar</th>
+				<th scope="col">Evento</th>
 			</tr>
 			<%
 				Lista proxEvs = new Lista();
@@ -45,9 +45,9 @@
 					evento = iter.next();
 			%>
 				<tr>
-					<td><%= evento.getNombre()%></td>
-					<td><%= evento.getLugar() %></td>
 					<td><%= evento.getFecha()%></td>
+					<td><%= evento.getLugar() %></td>
+					<td><%= evento.getNombre()%></td>
 				</tr>
 			<%
 				}
