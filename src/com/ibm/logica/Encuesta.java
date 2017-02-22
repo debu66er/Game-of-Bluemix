@@ -84,6 +84,7 @@ public class Encuesta {
 			
 			if (correcto) {
 				mensaje = "\u00a1Gracias por rellenar la encuesta!  Los datos se han guardado correctamente.";
+				request.setAttribute("evento", evento);
 			} else {
 				mensaje = "Ha habido un error, por favor, intenta rellenar la encuesta de nuevo.";
 			}
