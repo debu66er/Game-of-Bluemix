@@ -53,10 +53,11 @@
 				}
 			%>
 			</table>
-			<br> <br>
+			<br><br>
 			<div style="text-align: center;">
 				<a href="index.html"><button>Volver a inicio</button></a>
 			</div>
+			<br><br>
 		</div>
 	</body>
 </html>
