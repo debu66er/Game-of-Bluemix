@@ -109,13 +109,14 @@ h3 {
 }
 .caja4 {
 	position: relative;
+	display: inline-block;
 	color: #ffffff;
 	height: 80%;
 	width: 22%;
 	float: left;
 	text-align: center;
-	padding-top:180px;
-	padding-bottom:180px;
+	padding-top:181px;
+	padding-bottom:181px;
 	font-weight: bold;
 	font-size: 25px;
 }
