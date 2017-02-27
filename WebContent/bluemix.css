@@ -108,6 +108,22 @@ h3 {
 	line-height: 420px;
 }
 
+.mensaje{
+	position: relative;
+	display: inline-block;
+	height: 80%;
+	background-color: #008571;
+	color: #ffffff;
+	width: 22%;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 181px;
+	padding-top: 181px;
+}
+
+
 
 .caja5 {
 	position: relative;
