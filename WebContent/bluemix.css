@@ -96,7 +96,7 @@ h3 {
 	color: #ffffff;
 }
 
-.caja2, .caja3, .caja4 {
+.caja2, .caja3{
 	position: relative;
 	display: inline-block;
 	height: 80%;
@@ -106,6 +106,19 @@ h3 {
 	font-weight: bold;
 	font-size: 25px;
 	line-height: 420px;
+}
+.caja4 {
+	position: relative;
+	display: inline-block;
+	color: #ffffff;
+	height: 80%;
+	width: 22%;
+	float: left;
+	text-align: center;
+	padding-top:180px;
+	padding-bottom:180px;
+	font-weight: bold;
+	font-size: 25px;
 }
 
 .caja5 {
