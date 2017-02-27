@@ -119,7 +119,7 @@ public class adminControlador extends HttpServlet {
 				else if (accion.equals("eliminar")) {
 					gEventos evento = new gEventos();
 					evento.eliminarEvento(nombre, fecha, lugar);
-					response.sendRedirect("/Administrador/geventos.jsp");
+					response.sendRedirect("/Administrador/eventos.jsp");
 				}
 			} catch (ServletException e) {
 				e.printStackTrace();

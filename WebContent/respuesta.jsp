@@ -26,16 +26,18 @@
 		<div class="cuerpo">
 			<br><br><br><br><h1><%= (String)request.getAttribute("mensaje") %></h1><br><br>
 			<h3>Accede al material del evento en el siguiente enlace:</h3>
+			<p> <img src="./images/bluebox.png" alt="BlueBox access button" width="50" height="50" >
 			<% String evento = (String)request.getAttribute("evento"); 
+
 			if(evento!=null){
 				if(evento.compareTo("essentials")==0){%>
 				
-			<a href="https://ibm.box.com/s/2hpuajhxiaz4hf27yd1ck1w0dty3lke7"> <img src="./images/bluebox.png" alt="BlueBox access button" width="50" height="50" title="Accede al material" /></a>
+			<a href="https://ibm.box.com/s/2hpuajhxiaz4hf27yd1ck1w0dty3lke7"> Material </a>
 					
 				<%}
 				else if(evento.compareTo("cloudfoundry&openwhisk")==0){%>
 					
-			<a href="https://ibm.biz/BdswXG"><img src="./images/bluebox.png" alt="BlueBox access button" width="50" height="50" title="Accede al material" /></a>
+			<a href="https://ibm.biz/BdswXG">Material</a>
 					
 				<%}
 				
@@ -44,6 +46,7 @@
 			
 			
 			%>
+			</p>
 			<br><br><br><br>
 			<div style="text-align:center;"><a href="index.html"><button>Volver a inicio</button></a></div>
 		</div>		
