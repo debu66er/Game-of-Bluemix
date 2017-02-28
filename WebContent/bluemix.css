@@ -91,7 +91,7 @@ h3 {
 	float: left;
 	text-align: center;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 125%;
 	line-height: 105px;
 	color: #ffffff;
 }
@@ -115,10 +115,10 @@ h3 {
 	width: 22%;
 	float: left;
 	text-align: center;
-	padding-top:181px;
-	padding-bottom:181px;
+	padding-top:189px;
+	padding-bottom:189px;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 110%;
 	
 }
 
