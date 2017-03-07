@@ -46,13 +46,15 @@
 				<a href="https://ibm.box.com/s/2ryhs0ptawiiqv89ta42saou14ysp65t">Material</a>
 						
 					<%}
+				else{ %>
 				
+				El material del evento <%=evento%> no está disponible todavía </p>
 				
+				<%	}			
 			}
 			
 			
 			%>
-			</p>
 			<br><br><br><br>
 			<div style="text-align:center;"><a href="index.html"><button>Volver a inicio</button></a></div>
 		</div>		
