@@ -46,6 +46,13 @@
 				<a href="https://ibm.box.com/s/2ryhs0ptawiiqv89ta42saou14ysp65t">Material</a>
 						
 					<%}
+				
+				else if(evento.compareTo("infrastructure")==0){%>
+				
+				<a href="https://ibm.box.com/s/jl0h0nq4nxa1jgbjde1ritw2qqsvrccl">Material</a>
+						
+					<%}
+				
 				else{ %>
 				
 				El material del evento <%=evento%> no está disponible todavía </p>
