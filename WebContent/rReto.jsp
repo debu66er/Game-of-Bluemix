@@ -33,7 +33,45 @@
 			<br><br>
 			<% if ((Boolean)request.getAttribute("linkedin")==true){  %>
 			<h3>¡Comparte tu resultado en LinkedIn!</h3>
+			<% String evento = (String)request.getAttribute("evento"); 
+			
+			if(evento!=null){
+				if(evento.compareTo("essentials")==0){%>
+				
 			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./images/linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a>
+					
+				<%}
+				else if(evento.compareTo("cloudfoundry&openwhisk")==0){%>
+					
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./images/linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a>
+					
+				<%}
+				
+				else if(evento.compareTo("containers")==0){%>
+				
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./images/linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a>
+						
+					<%}
+				
+				else if(evento.compareTo("infrastructure")==0){%>
+				
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./images/linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a>
+						
+					<%}
+				
+				else{ %>
+				
+			<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//gameofbluemix.mybluemix.net/&title=Game%20of%20Bluemix&summary=Acabo%20de%20obtener%20mi%20certificado%20de%20asistencia%20al%20workshop%20%22Game%20of%20Bluemix%22.%20&source=" target="_new"> <img src="./images/linkedin.svg.png" alt="linkedin share button" width="50" height="50" title="Share on LinkedIn" /> </a></p>
+				
+				<%	}			
+			}
+			
+			
+			%>
+			
+			
+			
+			
 			<br>
 			<br>		
 			

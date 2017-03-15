@@ -25,6 +25,7 @@
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
 			<fileset dir="${basedir}/WebContent" includes="META-INF/**" />
 			<fileset dir="${basedir}/WebContent" includes="images/**" />
+			<fileset dir="${basedir}/WebContent" includes="badges**" />
 			<fileset dir="${basedir}/WebContent" includes="fonts/**" />
 			<fileset dir="${basedir}/WebContent" includes="Administrador/**" />
 			<fileset dir="${basedir}/WebContent" includes="*.html" />
