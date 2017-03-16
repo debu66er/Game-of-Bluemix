@@ -77,9 +77,9 @@ public class Controlador extends HttpServlet {
 				File currentDir = new File("");
 				System.out.println(currentDir.getAbsolutePath());
 				
-				//FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/badges/essentials-badge-award.json");
+				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/badges/essentials-badge-award.json");
 				
-				FileWriter file = new FileWriter("C:\\Users\\IBM_ADMIN\\git\\Game-of-Bluemix\\WebContent\\badges\\essentials-badge-award.json");
+				//FileWriter file = new FileWriter("C:\\Users\\IBM_ADMIN\\git\\Game-of-Bluemix\\WebContent\\badges\\essentials-badge-award.json");
 				
 				file.write(json.toJSONString());
 				
