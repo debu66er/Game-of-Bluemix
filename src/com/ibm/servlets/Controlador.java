@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.channels.Channels;
@@ -90,14 +92,20 @@ public class Controlador extends HttpServlet {
 				
 				file.close();
 				
-				String url = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/essentials-badge-award.json";
+				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/essentials-badge-award.json";
+				URL url = new URL(dir);
+				InputStream is = url.openStream();
+				OutputStream os = new FileOutputStream("essentialsbadge.png");
 
-				URL obj = new URL(url);
-				
-				
-				ReadableByteChannel rbc = Channels.newChannel(obj.openStream());
-				FileOutputStream fos = new FileOutputStream("information.html");
-				fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+				byte[] b = new byte[2048];
+				int length;
+
+				while ((length = is.read(b)) != -1) {
+					os.write(b, 0, length);
+				}
+
+				is.close();
+				os.close();
 				
 				request.getRequestDispatcher("/idea.jsp").forward(request, response);
 			}
