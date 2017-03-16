@@ -35,6 +35,11 @@
 			<h3>¡Comparte tu resultado en LinkedIn!</h3>
 			<% String evento = (String)request.getAttribute("evento"); 
 			
+			
+			
+			
+			
+			
 			if(evento!=null){
 				if(evento.compareTo("essentials")==0){%>
 				
@@ -68,7 +73,12 @@
 			
 			
 			%>
-			
+				<form name="formulario" method="post" action="/badge">
+				<input type="hidden" name="pagina" value="rReto">
+				Usuario:
+				<input type="text" id="email" name="email" />
+				<input type="submit" value="Enviar">
+				</form>
 			
 			
 			
@@ -112,7 +122,7 @@
 				i++;
 				}
 			%>
-		
+			
 			<br><br><div style="text-align:right;"><a href="idea.jsp"><button>Continuar</button></a></div> <br><br>
 			
 		</div>		
