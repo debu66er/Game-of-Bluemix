@@ -1,10 +1,13 @@
 package com.ibm.servlets;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -90,9 +93,11 @@ public class Controlador extends HttpServlet {
 				String url = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/essentials-badge-award.json";
 
 				URL obj = new URL(url);
-				HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-				con.setRequestMethod("GET");
-				System.out.println(con.getResponseCode());
+				
+				
+				ReadableByteChannel rbc = Channels.newChannel(obj.openStream());
+				FileOutputStream fos = new FileOutputStream("information.html");
+				fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 				
 				request.getRequestDispatcher("/idea.jsp").forward(request, response);
 			}
