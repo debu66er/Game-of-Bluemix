@@ -3,6 +3,8 @@ package com.ibm.servlets;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -45,7 +47,7 @@ public class Controlador extends HttpServlet {
 			} else if (request.getParameter("pagina").equals("idea")) {
 				Idea idea = new Idea();
 				idea.guardarDatos(request);
-				request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
+				request.getRequestDispatcher("/rIdea.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("rReto")) {
 				String email=request.getParameter("email");
 				TimeZone tz = TimeZone.getTimeZone("UTC");
@@ -84,7 +86,14 @@ public class Controlador extends HttpServlet {
 				file.write(json.toJSONString());
 				
 				file.close();
+				
+				String url = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/essentials-badge-award.json";
 
+				URL obj = new URL(url);
+				HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+				con.setRequestMethod("GET");
+				System.out.println(con.getResponseCode());
+				
 				request.getRequestDispatcher("/idea.jsp").forward(request, response);
 			}
 		} catch (ServletException e) {
