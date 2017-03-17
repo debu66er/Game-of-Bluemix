@@ -22,9 +22,10 @@
 				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
 			</div>
 		</div>
-		<div class="cuerpo">
-			<h1> ¡Enhorabuena, ya puedes descargar tu badge! </h1><br><br>
-			<img src="http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json" alt="Badge" height="50" width="50">
+			<div class="cuerpo" align="center">
+			<h1> ¡Enhorabuena ya puedes descargar tu badge! </h1><br><br>
+			<img src="http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json" alt="Badge" height="300" width="300">
+			<br><br>
 			<a href="http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json" download="badge.png">Descargar</a>
 			
 		</div>		
