@@ -57,6 +57,8 @@ public class Controlador extends HttpServlet {
 				HttpSession sesion=request.getSession();
 				String evento = (String) sesion.getAttribute("workshop");
 				String email=request.getParameter("email");
+				String user = email.substring(0, email.indexOf("@"));
+				System.out.println(user);
 				TimeZone tz = TimeZone.getTimeZone("UTC");
 				DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'"); // Quoted "Z" to indicate UTC, no timezone offset
 				df.setTimeZone(tz);
@@ -80,13 +82,13 @@ public class Controlador extends HttpServlet {
 				json.put("badge", "http://gameofbluemix.mybluemix.net/badges/"+evento+"-badge-class.json");
 				   
 				verjson.put("type","hosted");
-				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+email+"-badge-award.json");
+				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+user+"-badge-award.json");
 				json.put("verify", verjson);
 				
 				File currentDir = new File("");
 				System.out.println(currentDir.getAbsolutePath());
 				
-				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/awards/"+evento+"-"+email+"-badge-award.json");
+				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/awards/"+evento+"-"+user+"-badge-award.json");
 				
 				//FileWriter file = new FileWriter("C:\\Users\\IBM_ADMIN\\git\\Game-of-Bluemix\\WebContent\\badges\\essentials-badge-award.json");
 				

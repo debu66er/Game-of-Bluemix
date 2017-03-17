@@ -40,7 +40,7 @@
 			System.out.println(evento);
 			
 			if(evento!=null){
-				if(evento.compareTo("Essentials")==0){%>
+				if(evento.compareTo("essentials")==0){%>
 				
 				<form name="formulario" method="post" action="/badge">
 				<input type="hidden" name="pagina" value="rReto">
@@ -51,7 +51,7 @@
 				
 			
 				<%}
-				else if(evento.compareTo("cloudfoundry&openwhisk")==0){%>
+				else if(evento.compareTo("cloudfoundryOopenwhisk")==0){%>
 					
 					
 				<%}
