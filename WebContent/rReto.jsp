@@ -33,11 +33,10 @@
 			<br><br>
 			<% if ((Boolean)request.getAttribute("badge")==true){  %>
 			<h3>¡Obtén tu badge!</h3>
-			<% String evento = (String)request.getAttribute("workshop"); 
-			
-			
-			
-			
+			<%
+			HttpSession sesion=request.getSession();
+			String evento = (String) sesion.getAttribute("workshop");
+		
 			
 			
 			if(evento!=null){
@@ -45,9 +44,9 @@
 				
 				<form name="formulario" method="post" action="/badge">
 				<input type="hidden" name="pagina" value="rReto">
-				Usuario:
+				Email:
 				<input type="text" id="email" name="email" />
-				<input type="submit" value="Enviar">
+				<input type="submit" value="Generar Badge">
 				</form>
 				
 			
