@@ -54,6 +54,8 @@ public class Controlador extends HttpServlet {
 				idea.guardarDatos(request);
 				request.getRequestDispatcher("/rIdea.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("rReto")) {
+				HttpSession sesion=request.getSession();
+				String evento = (String) sesion.getAttribute("workshop");
 				String email=request.getParameter("email");
 				TimeZone tz = TimeZone.getTimeZone("UTC");
 				DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'"); // Quoted "Z" to indicate UTC, no timezone offset
@@ -75,16 +77,16 @@ public class Controlador extends HttpServlet {
 				json.put("recipient", recjson);
 				
 				json.put("issuedOn", nowAsISO);
-				json.put("badge", "http://gameofbluemix.mybluemix.net/badges/essentials-badge-class.json");
+				json.put("badge", "http://gameofbluemix.mybluemix.net/badges/"+evento+"-badge-class.json");
 				   
 				verjson.put("type","hosted");
-				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json");
+				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+email+"-badge-award.json");
 				json.put("verify", verjson);
 				
 				File currentDir = new File("");
 				System.out.println(currentDir.getAbsolutePath());
 				
-				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/awards/essentials-badge-award.json");
+				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/awards/"+evento+"-"+email+"-badge-award.json");
 				
 				//FileWriter file = new FileWriter("C:\\Users\\IBM_ADMIN\\git\\Game-of-Bluemix\\WebContent\\badges\\essentials-badge-award.json");
 				
@@ -92,8 +94,10 @@ public class Controlador extends HttpServlet {
 				
 				file.close();
 				
-				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json";
-				//Mostrar una pagina con el badge y las instrucciones para obtenerla			
+				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+email+"-badge-award.json";
+				session.setAttribute("dir", dir);
+				
+				//Mostrar una pagina con el badge y las instrucciones para obtenerla
 				request.getRequestDispatcher("/badge.jsp").forward(request, response);
 			}
 		} catch (ServletException e) {

@@ -22,11 +22,14 @@
 				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
 			</div>
 		</div>
+			<% HttpSession sesion=request.getSession();
+			String dir = (String) sesion.getAttribute("dir");
+			%>
 			<div class="cuerpo" align="center">
 			<h1> ¡Enhorabuena ya puedes descargar tu badge! </h1><br><br>
-			<img src="http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json" alt="Badge" height="300" width="300">
+			<img src=<%=dir%> alt="Badge" height="350" width="350">
 			<br><br>
-			<a href="http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json" download="badge.png">Descargar</a>
+			<a href=<%=dir%> download="badge.png">Descargar</a>
 			
 		</div>		
 </body>
