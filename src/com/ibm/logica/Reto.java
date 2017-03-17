@@ -19,7 +19,7 @@ public class Reto {
 		String mensaje, parametro, pImagen, pCheck;
 		int i = 1, valor, nCorrectas = 0, maxResp = 4;
 		boolean correcto;
-		boolean linkedin = false;
+		boolean badge = false;
 		
 		String imagen[][] = new String[preguntas.size()][maxResp];
 		String checked[][] = new String[preguntas.size()][maxResp];
@@ -71,11 +71,11 @@ public class Reto {
 
 		if (nCorrectas >= Math.ceil((double)(i-1)*0.6)) {
 			mensaje = "\u00a1Enhorabuena! Has acertado " + nCorrectas + " preguntas.";
-			linkedin=true;
+			badge=true;
 		}
 		else mensaje = "\u00a1Lo siento! Has acertado " + nCorrectas + " preguntas.";
 		
 		request.setAttribute("titulo", mensaje);
-		request.setAttribute("linkedin", linkedin);
+		request.setAttribute("badge", badge);
 	}
 }

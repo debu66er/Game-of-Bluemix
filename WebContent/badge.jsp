@@ -4,7 +4,7 @@
 <%@ page contentType="text/html; charset=UTF-8"%>
 <html lang="es">
 	<head>
-		<title>Game of Bluemix - Idea</title>
+		<title>Game of Bluemix - Badge</title>
 		<meta charset="UTF-8">
 		<meta name="author" content="Noelia Herranz">
 		<meta name="application-name" content="Martes de Bluemix">
