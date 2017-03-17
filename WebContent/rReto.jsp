@@ -31,7 +31,7 @@
 		<div class="cuerpo">
 			<h1><%= (String)request.getAttribute("titulo") %></h1>
 			<br><br>
-			<% if ((Boolean)request.getAttribute("linkedin")==true){  %>
+			<% if ((Boolean)request.getAttribute("badge")==true){  %>
 			<h3>¡Obtén tu badge!</h3>
 			<% String evento = (String)request.getAttribute("evento"); 
 			
