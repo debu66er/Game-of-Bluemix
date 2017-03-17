@@ -37,10 +37,10 @@
 			HttpSession sesion=request.getSession();
 			String evento = (String) sesion.getAttribute("workshop");
 		
-			
+			System.out.println(evento);
 			
 			if(evento!=null){
-				if(evento.compareTo("essentials")==0){%>
+				if(evento.compareTo("Essentials")==0){%>
 				
 				<form name="formulario" method="post" action="/badge">
 				<input type="hidden" name="pagina" value="rReto">
