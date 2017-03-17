@@ -78,7 +78,7 @@ public class Controlador extends HttpServlet {
 				json.put("badge", "http://gameofbluemix.mybluemix.net/badges/essentials-badge-class.json");
 				   
 				verjson.put("type","hosted");
-				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/essentials-badge-award.json");
+				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json");
 				json.put("verify", verjson);
 				
 				File currentDir = new File("");
