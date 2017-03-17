@@ -84,7 +84,7 @@ public class Controlador extends HttpServlet {
 				File currentDir = new File("");
 				System.out.println(currentDir.getAbsolutePath());
 				
-				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/essentials-badge-award.json");
+				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/awards/essentials-badge-award.json");
 				
 				//FileWriter file = new FileWriter("C:\\Users\\IBM_ADMIN\\git\\Game-of-Bluemix\\WebContent\\badges\\essentials-badge-award.json");
 				
@@ -92,22 +92,9 @@ public class Controlador extends HttpServlet {
 				
 				file.close();
 				
-				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/essentials-badge-award.json";
-				URL url = new URL(dir);
-				InputStream is = url.openStream();
-				OutputStream os = new FileOutputStream("essentialsbadge.png");
-
-				byte[] b = new byte[2048];
-				int length;
-
-				while ((length = is.read(b)) != -1) {
-					os.write(b, 0, length);
-				}
-
-				is.close();
-				os.close();
-				
-				request.getRequestDispatcher("/idea.jsp").forward(request, response);
+				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/essentials-badge-award.json";
+				//Mostrar una pagina con el badge y las instrucciones para obtenerla			
+				request.getRequestDispatcher("/badge.jsp").forward(request, response);
 			}
 		} catch (ServletException e) {
 			e.printStackTrace();
