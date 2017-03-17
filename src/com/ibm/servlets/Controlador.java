@@ -55,7 +55,9 @@ public class Controlador extends HttpServlet {
 				request.getRequestDispatcher("/rIdea.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("rReto")) {
 				HttpSession sesion=request.getSession();
-				String evento = (String) sesion.getAttribute("workshop");
+				String workshop = (String) sesion.getAttribute("workshop");
+				String evento = workshop.toLowerCase();
+				evento = evento.replace(" ", "");
 				String email=request.getParameter("email");
 				String user = email.substring(0, email.indexOf("@"));
 				System.out.println(user);
