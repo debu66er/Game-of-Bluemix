@@ -31,7 +31,7 @@
 			<br><br>
 			<a href=<%=response.encodeURL(dir)%> download="badge.png">Descargar</a><br><br><br><br>
 			<h1> ¡Importa tu badge a Backpack y compartelo con tus redes! </h1><br><br>
-			<h2>1. Descarga tu badge e importalo a Backpack: https://backpack.openbadges.org/ <h2>
+			<h2>1. Descarga tu badge e importalo a Backpack: <a href=https://backpack.openbadges.org>https://backpack.openbadges.org</a><h2>
 			<img src=./images/backpack_1.png alt="upload" weigth=350 height=350><br><br>
 			<h2>2. Selecciona el archivo de imagen que acabas de descargar<h2>
 			<img src=./images/backpack_2.png alt="browse" weigth=350 height=350><br><br>

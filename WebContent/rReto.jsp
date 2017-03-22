@@ -46,7 +46,7 @@
 				<input type="hidden" name="pagina" value="rReto">
 				Email:
 				<input type="text" id="email" name="email" />
-				<input type="submit" value="Generar Badge">
+				<input type="submit" value="Generar badge">
 				</form>
 				
 			
