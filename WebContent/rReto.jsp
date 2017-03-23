@@ -51,17 +51,24 @@
 				
 			
 				<%}
-				else if(evento.compareTo("cloudfoundryOopenwhisk")==0){%>
+				else if(evento.compareTo("Cloudfoundry & Openwhisk")==0){%>
+				
+				<form name="formulario" method="post" action="/badge">
+				<input type="hidden" name="pagina" value="rReto">
+				Email:
+				<input type="text" id="email" name="email" />
+				<input type="submit" value="Generar badge">
+				</form>
 					
 					
 				<%}
 				
-				else if(evento.compareTo("containers")==0){%>
+				else if(evento.compareTo("Containers")==0){%>
 				
 						
 					<%}
 				
-				else if(evento.compareTo("infrastructure")==0){%>
+				else if(evento.compareTo("Infrastructure")==0){%>
 				
 						
 					<%}

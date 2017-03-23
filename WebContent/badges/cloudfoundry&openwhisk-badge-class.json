@@ -1,0 +1,7 @@
+{
+    "name": "Game of Bluemix CloudFoundry & Openwhisk",
+    "description": "I passed the Game of Bluemix CloudFoundry & Openwhisk Challenge",
+    "image": "http://gameofbluemix.mybluemix.net/badges/cf.png",
+    "criteria": "https://mybadges.mkmapps.com/app/#!/criteria?badgeid=6585914d-4056-401b-b75a-74c2420485d9",
+    "issuer": "http://gameofbluemix.mybluemix.net/badges/issuer.json"
+}

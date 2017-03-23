@@ -74,7 +74,7 @@ public class Controlador extends HttpServlet {
 				json.put("uid", UUID.randomUUID().toString());
 				
 				
-				//recient
+				//recipient
 				recjson.put("type","email");
 				recjson.put("identity",email);
 				recjson.put("hashed", false);
