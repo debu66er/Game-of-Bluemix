@@ -58,6 +58,11 @@ public class Controlador extends HttpServlet {
 				String workshop = (String) sesion.getAttribute("workshop");
 				String evento = workshop.toLowerCase();
 				evento = evento.replace(" ", "");
+				if (evento.contains("&")){
+					evento = evento.replace("&", "and");
+				}
+				
+				
 				String email=request.getParameter("email");
 				String user = email.substring(0, email.indexOf("@"));
 				System.out.println(user);
