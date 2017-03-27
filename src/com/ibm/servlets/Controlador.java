@@ -56,10 +56,12 @@ public class Controlador extends HttpServlet {
 			} else if (request.getParameter("pagina").equals("rReto")) {
 				HttpSession sesion=request.getSession();
 				String workshop = (String) sesion.getAttribute("workshop");
-				String evento = workshop.toLowerCase();
-				evento = evento.replace(" ", "");
+				
+				//Formatear el nombre del workshop para crear los JSON 
+				String evento = workshop.toLowerCase(); //minusculas
+				evento = evento.replace(" ", "");  //sin espacios
 				if (evento.contains("&")){
-					evento = evento.replace("&", "and");
+					evento = evento.replace("&", "and"); //sustituir & por and
 				}
 				
 				

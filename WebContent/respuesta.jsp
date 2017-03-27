@@ -53,6 +53,12 @@
 						
 					<%}
 				
+				else if(evento.compareTo("mobile&IoT")==0){%>
+				
+				<a href="https://ibm.box.com/s/es7l4wlluxoz20fob4htegrdujbyso3x">Material</a>
+						
+					<%}
+				
 				else{ %>
 				
 				El material del evento <%=evento%> no está disponible todavía </p>
