@@ -59,6 +59,12 @@
 						
 					<%}
 				
+				else if(evento.compareTo("data&analytics")==0){%>
+				
+				<a href="https://ibm.box.com/s/s5prbi5zbcg376ywf9q4t51yqm3raju1">Material</a>
+						
+					<%}
+				
 				else{ %>
 				
 				El material del evento <%=evento%> no está disponible todavía </p>
