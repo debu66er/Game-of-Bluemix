@@ -24,8 +24,9 @@
 		</div>
 			
 		<%
+			boolean encuesta = false;
 			HttpSession sesion=request.getSession();
-			boolean encuesta = (Boolean)sesion.getAttribute("encuesta");
+			encuesta = (Boolean)sesion.getAttribute("encuesta");
 			String evento = (String)sesion.getAttribute("evento");
 			if(encuesta && evento!=null){
 				request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
