@@ -27,7 +27,11 @@
 			<br><br><br><br><h1><%= (String)request.getAttribute("mensaje") %></h1><br><br>
 			<h3>Accede al material del evento en el siguiente enlace:</h3>
 			<p> <img src="./images/bluebox.png" alt="BlueBox access button" width="50" height="50" >
-			<% String evento = (String)request.getAttribute("evento"); 
+			<% HttpSession sesion=request.getSession();
+			String evento = (String)request.getAttribute("evento"); 
+			if(evento==null){
+				evento = (String)sesion.getAttribute("evento");
+			}
 
 			if(evento!=null){
 				if(evento.compareTo("essentials")==0){%>

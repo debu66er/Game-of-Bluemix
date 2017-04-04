@@ -25,6 +25,12 @@
 			
 		<%
 			HttpSession sesion=request.getSession();
+			boolean encuesta = (Boolean)sesion.getAttribute("encuesta");
+			String evento = (String)sesion.getAttribute("evento");
+			if(encuesta && evento!=null){
+				request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
+			}
+			else{
 		%>
 		
 		<div class="cuerpo">
@@ -226,6 +232,7 @@
 				<br><br><div style="text-align:center;"><input type="submit" value="Enviar"></div>
 				<br><br><br>
 			</form>
+			<% } %>
 		</div>		
 	</body>
 </html>
