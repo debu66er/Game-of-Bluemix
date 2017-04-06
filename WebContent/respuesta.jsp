@@ -43,15 +43,15 @@
 			}
 			
 			if(evento.compareTo("essentials")==0){
-				enlace ="https://ibm.box.com/s/2hpuajhxiaz4hf27yd1ck1w0dty3lke7";
+				enlace ="https://ibm.box.com/s/x8lmmxoxujxpl1gc59mzaskuv877qhbt";
 			}
 		
 			else if(evento.compareTo("cloudfoundry&openwhisk")==0){
-				enlace="https://ibm.biz/BdswXG";
+				enlace="https://ibm.box.com/s/fwa5rk8amufv891nu3ay5yu02jwgzxex";
 			}
 			
 			else if(evento.compareTo("containers")==0){
-				enlace="https://ibm.box.com/s/2ryhs0ptawiiqv89ta42saou14ysp65t";
+				enlace="https://ibm.box.com/s/h745zfzm5k7jfqik7l1m8bu7y7d5sapd";
 			}
 			
 			else if(evento.compareTo("infrastructure")==0){
