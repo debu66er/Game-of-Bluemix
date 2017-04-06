@@ -32,6 +32,7 @@
 		boolean encuesta = (Boolean) session.getAttribute("encuesta");
 		
 		if(encuesta){
+			request.setAttribute("correcto", true);
 			request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
 		}
 		else{
