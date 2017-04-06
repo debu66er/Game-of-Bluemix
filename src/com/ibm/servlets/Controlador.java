@@ -43,8 +43,12 @@ public class Controlador extends HttpServlet {
 				request.getRequestDispatcher("/reto.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("encuesta")) {
 				Encuesta encuesta = new Encuesta();
+				String evento = request.getParameter("evento");
 				session.setAttribute("encuesta",true);
+				session.setAttribute("evento",evento);
 				encuesta.guardarDatos(request);
+				String mensaje = (String) request.getAttribute("mensaje");
+				session.setAttribute("mensaje", mensaje);
 				request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("reto")) {
 				Reto reto = new Reto();

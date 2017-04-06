@@ -24,7 +24,18 @@
 		</div>
 			
 		<%
-			HttpSession sesion=request.getSession();
+		
+		if(session.getAttribute("encuesta") == null || session.getAttribute("encuesta").equals("")){
+			session.setAttribute("encuesta", false);
+			
+		}
+		boolean encuesta = (Boolean) session.getAttribute("encuesta");
+		
+		if(encuesta){
+			request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
+		}
+		else{
+
 		%>
 		
 		<div class="cuerpo">
@@ -38,7 +49,7 @@
 					</tr>
 					<tr>
 						<td class="form">*Empresa: </td>
-						<td class="form"><input type="text" name="empresa" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete su empresa')" oninput="setCustomValidity('')" value="<% if (sesion.getAttribute("empresa") != null) out.print(sesion.getAttribute("empresa")); %>"/></td>
+						<td class="form"><input type="text" name="empresa" size=60 maxlength=60 required oninvalid="setCustomValidity('Por favor, complete su empresa')" oninput="setCustomValidity('')" value="<% if (session.getAttribute("empresa") != null) out.print(session.getAttribute("empresa")); %>"/></td>
 					</tr>
 					<tr>
 						<td class="form">*e-mail: </td>
@@ -226,6 +237,7 @@
 				<br><br><div style="text-align:center;"><input type="submit" value="Enviar"></div>
 				<br><br><br>
 			</form>
-		</div>		
+		</div>	
+		<% } %>	
 	</body>
 </html>
