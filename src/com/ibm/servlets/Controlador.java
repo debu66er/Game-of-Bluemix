@@ -115,6 +115,24 @@ public class Controlador extends HttpServlet {
 				
 				//Mostrar una pagina con el badge y las instrucciones para obtenerla
 				request.getRequestDispatcher("/badge.jsp").forward(request, response);
+			} else if (request.getParameter("pagina").equals("poll")) {
+				boolean done = false;
+				String mensaje;
+				String evento = request.getParameter("evento");
+				String email = request.getParameter("email");
+				Encuesta encuesta = new Encuesta();
+				done=encuesta.alreadyDone(email, evento);
+				if(done){
+					mensaje = "\u00a1Gracias por haber rellenado la encuesta!";
+					request.setAttribute("evento", evento);
+				} else {
+					mensaje = "Todavía no has rellenado la encuesta del workshop seleccionado.";				
+				}
+				request.setAttribute("mensaje", mensaje);
+				request.setAttribute("correcto", done);
+				request.getRequestDispatcher("/respuesta.jsp").forward(request, response);
+
+				
 			}
 		} catch (ServletException e) {
 			e.printStackTrace();

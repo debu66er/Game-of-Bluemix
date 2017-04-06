@@ -1,6 +1,7 @@
 package com.ibm.logica;
 
 import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -8,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import com.ibm.conexion.Conexion;
+import com.ibm.logica.modelo.Evento;
 
 public class Encuesta {
 	
@@ -89,6 +91,7 @@ public class Encuesta {
 				mensaje = "Ha habido un error, por favor, intenta rellenar la encuesta de nuevo.";
 			}
 			request.setAttribute("mensaje", mensaje);
+			request.setAttribute("correcto", correcto);
 			
 			con.close();
 			
@@ -118,5 +121,35 @@ public class Encuesta {
 		}
 		
 		return valor;
+	}
+	
+	public boolean alreadyDone(String email, String evento){
+		boolean done = false;
+		Connection con = Conexion.init();
+		try {
+			Statement st = con.createStatement();
+			String query = "SELECT evento FROM ENCUESTA WHERE email='"+email+"';";
+			ResultSet rs = st.executeQuery(query);
+			System.out.println(query);
+			while (rs.next()) {
+			 if (rs.getString("evento").compareTo(evento)==0){
+				 done=true;
+				 System.out.println("The user has already done the poll");
+
+			 }
+			}
+		    
+			
+			con.close();
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
+		
+		
+		return done;
 	}
 }

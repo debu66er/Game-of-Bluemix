@@ -25,12 +25,14 @@
 					
 		<div class="cuerpo">
 			<%String mensaje = (String)request.getAttribute("mensaje"); 
+			boolean correcto = (Boolean)request.getAttribute("correcto");
 			
 			if(mensaje==null){
 				mensaje = (String)session.getAttribute("mensaje");
 			} %>
 			
 			<br><br><br><br><h1><%= mensaje %></h1><br><br>
+			<%if(correcto){ %>
 			<h3>Accede al material del evento en el siguiente enlace:</h3>
 			<p> <img src="./images/bluebox.png" alt="BlueBox access button" width="50" height="50" >
 			<% String evento = (String)request.getAttribute("evento");
@@ -66,7 +68,8 @@
 			El material del evento <%=evento%> no está disponible todavía </p>
 			
 			<%	}  %>
-			<a href="<%=enlace%>"> Material </a>
+			<a href="<%=enlace%>" class="enlace"> Material </a>
+			<% } %>
 			<br><br><br><br>
 			<div style="text-align:center;"><a href="index.html"><button>Volver a inicio</button></a></div>
 		</div>		
