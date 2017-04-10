@@ -40,7 +40,7 @@
 			System.out.println(evento);
 			
 			if(evento!=null){
-				if(evento.compareTo("Essentials")==0 || evento.compareTo("Cloudfoundry & Openwhisk")==0 || evento.compareTo("Containers")==0 || evento.compareTo("Infrastructure")==0 || evento.compareTo("Mobile & IoT")==0){%>
+				if(evento.compareTo("Essentials")==0 || evento.compareTo("Cloudfoundry & Openwhisk")==0 || evento.compareTo("Containers")==0 || evento.compareTo("Infrastructure")==0 || evento.compareTo("Mobile & IoT")==0 || evento.compareTo("Data & Analytics")==0){%>
 				
 				<form name="formulario" method="post" action="/badge">
 				<input type="hidden" name="pagina" value="rReto">
