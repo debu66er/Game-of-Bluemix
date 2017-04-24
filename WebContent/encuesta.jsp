@@ -40,7 +40,7 @@
 		%>
 		
 		<div class="cuerpo">
-			<h1>¡Gracias por tu asistencia!  Nos interesan mucho tu opinión</h1><br><br>
+			<h1>¡Gracias por tu asistencia!  Nos interesa mucho tu opinión</h1><br><br>
 			<form action="/encuesta" method="post">
 				<input type="hidden" name="pagina" value="encuesta">
 				<table class=form>
