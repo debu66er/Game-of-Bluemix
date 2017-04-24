@@ -28,7 +28,7 @@
 		%>
 		
 		<div class="cuerpo">
-			<h1>Seleccione que workshop esta realizando</h1><br><br>
+			<h1>Seleccione qué workshop está realizando</h1><br><br>
 			<form action="/encuesta" method="post">
 				<input type="hidden" name="pagina" value="retoworkshop">
 
@@ -38,7 +38,7 @@
 						<td class="input"><input type="radio" name="workshop" value="Essentials" checked="checked"></td>
 					</tr>
 					<tr class="impar">
-						<td>Game of Bluemix: Experienced - CloudFoundry & Openwhisk</td>
+						<td>Game of Bluemix: Experienced - CloudFoundry & OpenWhisk</td>
 						<td class="input"><input type="radio" name="workshop" value="Cloudfoundry & Openwhisk"></td>
 					</tr>
 					<tr class="par">
