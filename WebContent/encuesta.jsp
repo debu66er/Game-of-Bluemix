@@ -71,7 +71,7 @@
 						<td class="input"><input type="radio" name="evento" value="essentials"></td>
 					</tr>
 					<tr class="impar">
-						<td>Game of Bluemix: Experienced - CloudFoundry & Openwhisk</td>
+						<td>Game of Bluemix: Experienced - CloudFoundry & OpenWhisk</td>
 						<td class="input"><input type="radio" name="evento" value="cloudfoundry&openwhisk"></td>
 					</tr>
 					<tr class="par">
