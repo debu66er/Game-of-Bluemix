@@ -47,7 +47,7 @@
 					</td>
 					</tr><tr>	
 						<td class="form">Pregunta</td>
-						<td class="form"><input type="text" name="preg" size=50 maxlength=200 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')"></td>
+						<td class="form"><input type="text" name="preg" size=50 maxlength=1000 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')"></td>
 					</tr><tr>	
 						<td class="form">Respuesta 1</td>
 						<td class="form"><input type="text" name="resp1" size=50 maxlength=200 required oninvalid="setCustomValidity('Por favor, complete la pregunta')" oninput="setCustomValidity('')"></td>
