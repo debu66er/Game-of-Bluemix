@@ -16,7 +16,8 @@ public class Reto {
 		Iterator<Pregunta> iter = preguntas.iterator();
 		Pregunta pregunta;
 		
-		String mensaje, parametro, pImagen, pCheck;
+		String parametro, pImagen, pCheck;
+		String mensaje = "";
 		int i = 1, valor, nCorrectas = 0, maxResp = 4;
 		boolean correcto;
 		boolean badge = false;
