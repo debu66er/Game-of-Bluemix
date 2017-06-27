@@ -115,7 +115,7 @@ public class Controlador extends HttpServlet {
 				
 				//Mostrar una pagina con el badge y las instrucciones para obtenerla
 				//request.getRequestDispatcher("/badge.jsp").forward(request, response);
-				request.getRequestDispatcher("/badge_unavailable.jsp").forward(request, response);
+				request.getRequestDispatcher("/badge.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("poll")) {
 				boolean done = false;
 				String mensaje;
