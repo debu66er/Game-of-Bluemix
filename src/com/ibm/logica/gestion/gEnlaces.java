@@ -25,7 +25,7 @@ public class gEnlaces {
 			st = con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY);
 					
 			///NO FUNCIONA EL ORDER BY CASE
-			rs = st.executeQuery("SELECT * FROM ENLACESBM ORDER BY CASE CATEGORIA WHEN 'P�ginas oficiales' THEN 1 WHEN 'Documentaci�n oficial' THEN 2 ELSE 3 END");
+			rs = st.executeQuery("SELECT * FROM ENLACESBM ORDER BY CASE CATEGORIA WHEN 'PÃ¡ginas oficiales' THEN 1 WHEN 'DocumentacÃ³�n oficial' THEN 2 ELSE 3 END");
 			String alias, categoria, link, oculto;
 			
 			while (rs.next()) {

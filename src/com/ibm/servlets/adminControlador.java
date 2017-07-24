@@ -42,7 +42,7 @@ public class adminControlador extends HttpServlet {
 
 			try {
 				auth = gusers.authenticate(strUserName, request.getParameter("pass"));
-				//pendiente a�adir servicio SSO
+				//pendiente aÃ±adir servicio SSO
 				if (auth){
 					session.setAttribute("errorMsg", "");
 				    session.setAttribute("userName",strUserName); 

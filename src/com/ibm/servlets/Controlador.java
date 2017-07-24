@@ -127,7 +127,7 @@ public class Controlador extends HttpServlet {
 					mensaje = "\u00a1Gracias por haber rellenado la encuesta!";
 					request.setAttribute("evento", evento);
 				} else {
-					mensaje = "Todav�a no has rellenado la encuesta del workshop seleccionado.";				
+					mensaje = "TodavÃ­a no has rellenado la encuesta del workshop seleccionado.";				
 				}
 				request.setAttribute("mensaje", mensaje);
 				request.setAttribute("correcto", done);
