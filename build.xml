@@ -1,7 +1,7 @@
 <project name="Game of Bluemix Build Script" default="all" basedir=".">
 	
 	<property name="lib_dir" value="${basedir}/lib"/>
-	<property name="artifact_dir" value="${basedir}/build"/>
+	<property name="artifact_dir" value="${ARCHIVE_DIR}"/>
 
 	<target name="all" depends="compile, package, deploy">
 		<echo message="Build completed." />
@@ -20,8 +20,7 @@
 	</target>
 
 	<target name="package">
-		<war destfile="${basedir}/GameOfBluemix.war" manifest=
-		"${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
+		<war destfile="${basedir}/GameOfBluemix.war" manifest="${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/classes/**" />
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
 			<fileset dir="${basedir}/WebContent" includes="META-INF/**" />
