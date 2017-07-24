@@ -4,6 +4,6 @@ applications:
   host: gameofbluemix
   domain: mybluemix.net
   instances: 1
-  memory: 512M
+  memory: 1024M
   disk_quota: 512M
   path: GameOfBluemix.war
