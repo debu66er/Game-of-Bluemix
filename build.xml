@@ -20,6 +20,11 @@
 	</target>
 
 	<target name="package">
+		<mkdir dir="${basedir}/WebContent/WEB-INF/lib" />
+	    <copy todir="${basedir}/WebContent/WEB-INF/lib">
+			<fileset file="${lib_dir}/javacsv.jar" />
+			<fileset file="${lib_dir}/json-simple-1.1.jar" />
+		</copy>
 		<war destfile="${basedir}/GameOfBluemix.war" manifest="${basedir}/WebContent/META-INF/MANIFEST.MF" needxmlfile="false">
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/classes/**" />
 			<fileset dir="${basedir}/WebContent" includes="WEB-INF/lib/**" />
