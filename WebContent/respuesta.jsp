@@ -18,8 +18,8 @@
 			<a class="titulo" href="index.html"><img src="images/bluemix-logo.png" style="padding-top:2px; vertical-align: middle;">&nbsp;&nbsp;&nbsp;&nbsp;Game of Bluemix </a>
 			<div class="admin"><a class="enlace" href="/Administrador/index.jsp" target="_blank">Administrador</a></div>
 			<div class="menu">
-				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Próximos eventos</a>
-				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interés</a>
+				<a class="enlace" href="eventos.jsp" style="padding-right: 10px;">Prï¿½ximos eventos</a>
+				<a class="enlace" href="enlaces.jsp" style="padding-left: 10px;">Enlaces de interï¿½s</a>
 			</div>
 		</div>
 					
@@ -51,7 +51,7 @@
 			}
 			
 			else if(evento.compareTo("containers")==0){
-				enlace="https://ibm.box.com/s/h745zfzm5k7jfqik7l1m8bu7y7d5sapd";
+				enlace="https://ibm.box.com/s/yppsd5fq8kn3z64uyg5lkd10x63sqai6";
 			}
 			
 			else if(evento.compareTo("infrastructure")==0){
@@ -65,7 +65,7 @@
 			}
 			else{ %>
 			
-			El material del evento <%=evento%> no está disponible todavía </p>
+			El material del evento <%=evento%> no estï¿½ disponible todavï¿½a </p>
 			
 			<%	}  %>
 			<a href="<%=enlace%>" class="enlace"> Material </a>
