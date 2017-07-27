@@ -61,7 +61,6 @@ public class Controlador extends HttpServlet {
 				request.getRequestDispatcher("/rIdea.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("rReto")) {
 
-				
 				//Badges badges = new Badges();
 				//badges.guardarBadge(request);
 				
