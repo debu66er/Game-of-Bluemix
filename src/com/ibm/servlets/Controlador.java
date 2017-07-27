@@ -25,6 +25,7 @@ import javax.servlet.http.HttpSession;
 
 import org.json.simple.JSONObject;
 
+import com.ibm.logica.Badges;
 import com.ibm.logica.Encuesta;
 import com.ibm.logica.Idea;
 import com.ibm.logica.Reto;
@@ -59,59 +60,9 @@ public class Controlador extends HttpServlet {
 				idea.guardarDatos(request);
 				request.getRequestDispatcher("/rIdea.jsp").forward(request, response);
 			} else if (request.getParameter("pagina").equals("rReto")) {
-				HttpSession sesion=request.getSession();
-				String workshop = (String) sesion.getAttribute("workshop");
 				
-				//Formatear el nombre del workshop para crear los JSON 
-				String evento = workshop.toLowerCase(); //minusculas
-				evento = evento.replace(" ", "");  //sin espacios
-				if (evento.contains("&")){
-					evento = evento.replace("&", "and"); //sustituir & por and
-				}
-				
-				
-				String email=request.getParameter("email");
-				String user = email.substring(0, email.indexOf("@"));
-				System.out.println(user);
-				TimeZone tz = TimeZone.getTimeZone("UTC");
-				DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm'Z'"); // Quoted "Z" to indicate UTC, no timezone offset
-				df.setTimeZone(tz);
-				String nowAsISO = df.format(new Date());
-
-				
-				JSONObject json = new JSONObject();
-				JSONObject recjson = new JSONObject();
-				JSONObject verjson = new JSONObject();
-		
-				json.put("uid", UUID.randomUUID().toString());
-				
-				
-				//recipient
-				recjson.put("type","email");
-				recjson.put("identity",email);
-				recjson.put("hashed", false);
-				json.put("recipient", recjson);
-				
-				json.put("issuedOn", nowAsISO);
-				json.put("badge", "http://gameofbluemix.mybluemix.net/badges/"+evento+"-badge-class.json");
-				   
-				verjson.put("type","hosted");
-				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+user+"-badge-award.json");
-				json.put("verify", verjson);
-				
-				File currentDir = new File("");
-				System.out.println(currentDir.getAbsolutePath());
-				
-				FileWriter file = new FileWriter(currentDir.getAbsolutePath()+"/apps/myapp.war/badges/awards/"+evento+"-"+user+"-badge-award.json");
-				
-				//FileWriter file = new FileWriter("C:\\Users\\IBM_ADMIN\\git\\Game-of-Bluemix\\WebContent\\badges\\essentials-badge-award.json");
-				
-				file.write(json.toJSONString());
-				
-				file.close();
-				
-				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+user+"-badge-award.json";
-				session.setAttribute("dir", dir);
+				Badges badges = new Badges();
+				badges.guardarBadge(request);
 				
 				//Mostrar una pagina con el badge y las instrucciones para obtenerla
 				//request.getRequestDispatcher("/badge.jsp").forward(request, response);

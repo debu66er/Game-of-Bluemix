@@ -15,6 +15,7 @@
 				<pathelement path="${lib_dir}/com.ibm.websphere.appserver.api.json_1.0.1.jar"/>
 				<pathelement path="${lib_dir}/javacsv.jar"/>
 				<pathelement path="${lib_dir}/json-simple-1.1.jar"/>
+				<pathelement path="${lib_dir}/com.ibm.ws.javaee.jaxrs.1.1_1.0.8.jar"/>
 			</classpath>
 		</javac>
 	</target>

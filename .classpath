@@ -17,5 +17,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/IBM_ADMIN/Documents/TechBuild/jars_rs/com.ibm.ws.javaee.jaxrs.1.1_1.0.8.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
