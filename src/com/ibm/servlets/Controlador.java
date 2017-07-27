@@ -116,9 +116,7 @@ public class Controlador extends HttpServlet {
 				
 				String dir = "http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+user+"-badge-award.json";
 				session.setAttribute("dir", dir);				
-				Badges badges = new Badges();
-				badges.guardarBadge(request);
-				
+
 				//Mostrar una pagina con el badge y las instrucciones para obtenerla
 				//request.getRequestDispatcher("/badge.jsp").forward(request, response);
 				request.getRequestDispatcher("/badge.jsp").forward(request, response);
