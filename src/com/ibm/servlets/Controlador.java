@@ -101,7 +101,7 @@ public class Controlador extends HttpServlet {
 				json.put("badge", "http://gameofbluemix.mybluemix.net/badges/"+evento+"-badge-class.json");
 				   
 				verjson.put("type","hosted");
-				verjson.put("url","http://backpack.openbadges.org/baker?assertion=http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+user+"-badge-award.json");
+				verjson.put("url","http://gameofbluemix.mybluemix.net/badges/awards/"+evento+"-"+user+"-badge-award.json");
 				json.put("verify", verjson);
 				File currentDir = new File("");
 				System.out.println(currentDir.getAbsolutePath());
